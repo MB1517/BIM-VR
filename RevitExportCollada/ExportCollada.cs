@@ -4,6 +4,7 @@ using System.Linq;
 using System.IO;
 using System.Diagnostics;
 using swf=System.Windows.Forms;
+using System.Text;
 
 using Autodesk.Revit.UI;
 using Autodesk.Revit.DB;
@@ -29,6 +30,7 @@ namespace RevitExportCollada
 
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
+            
             //
             //
             //swf.MessageBox.Show("ĐANG TRONG QUÁ TRÌNH XÂY DỰNG\nUNDER CONSTRUCTION");

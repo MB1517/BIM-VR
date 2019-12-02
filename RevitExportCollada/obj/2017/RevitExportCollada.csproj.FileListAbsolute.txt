@@ -18,3 +18,4 @@ F:\016-NGHIEN CUU\COFRevitAPILibs\RevitExportCollada\obj\2017\RevitExportCollada
 F:\016-NGHIEN CUU\COFRevitAPILibs\RevitExportCollada\obj\2017\RevitExportCollada.csproj.CopyComplete
 F:\016-NGHIEN CUU\COFRevitAPILibs\RevitExportCollada\obj\2017\RevitExportCollada.dll
 F:\016-NGHIEN CUU\COFRevitAPILibs\RevitExportCollada\obj\2017\RevitExportCollada.pdb
+E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\RevitExportCollada\obj\2017\RevitExportCollada.csprojAssemblyReference.cache
