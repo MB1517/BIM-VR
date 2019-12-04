@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\Data\AutoDim\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -32,35 +32,101 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2017|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\2017\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>false</Optimize>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2019|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\2019\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AcCoreMgd">
-      <HintPath>..\..\Data\2019\inc\AcCoreMgd.dll</HintPath>
+    <Reference Include="accoremgd">
+      <HintPath>..\..\Data\2017\accoremgd.dll</HintPath>
       <Private>False</Private>
-      <Aliases>global</Aliases>
     </Reference>
-    <Reference Include="AcDbMgd">
-      <HintPath>..\..\Data\2019\inc\AcDbMgd.dll</HintPath>
+    <Reference Include="AcCui">
+      <HintPath>..\..\Data\2017\AcCui.dll</HintPath>
       <Private>False</Private>
-      <Aliases>global</Aliases>
     </Reference>
-    <Reference Include="AcMgd">
-      <HintPath>..\..\Data\2019\inc\AcMgd.dll</HintPath>
+    <Reference Include="acdbmgd">
+      <HintPath>..\..\Data\2017\acdbmgd.dll</HintPath>
       <Private>False</Private>
-      <Aliases>global</Aliases>
     </Reference>
-    <Reference Include="Autodesk.AutoCAD.Interop">
-      <HintPath>..\..\Data\2019\Autodesk.AutoCAD.Interop.dll</HintPath>
+    <Reference Include="acmgd">
+      <HintPath>..\..\Data\2017\acmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+	<Reference Include="Autodesk.AutoCAD.Interop">
+      <HintPath>..\..\Data\2017\Autodesk.AutoCAD.Interop.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AutoCAD.Interop.Common">
+      <HintPath>..\..\Data\2017\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+
+    <Reference Include="accoremgd" Condition="'$(Configuration)'=='2017'">
+      <HintPath>..\..\Data\2017\accoremgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcCui" Condition="'$(Configuration)'=='2017'">
+      <HintPath>..\..\Data\2017\AcCui.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acdbmgd" Condition="'$(Configuration)'=='2017'">
+      <HintPath>..\..\Data\2017\acdbmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acmgd" Condition="'$(Configuration)'=='2017'">
+      <HintPath>..\..\Data\2017\acmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+	<Reference Include="Autodesk.AutoCAD.Interop" Condition="'$(Configuration)'=='2017'">
+      <HintPath>..\..\Data\2017\Autodesk.AutoCAD.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop.Common" Condition="'$(Configuration)'=='2017'">
+      <HintPath>..\..\Data\2017\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+
+
+    <Reference Include="accoremgd" Condition="'$(Configuration)'=='2019'">
+      <HintPath>..\..\Data\2019\accoremgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcCui" Condition="'$(Configuration)'=='2019'">
+      <HintPath>..\..\Data\2019\AcCui.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acdbmgd" Condition="'$(Configuration)'=='2019'">
+      <HintPath>..\..\Data\2019\acdbmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acmgd" Condition="'$(Configuration)'=='2019'">
+      <HintPath>..\..\Data\2019\acmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+	<Reference Include="Autodesk.AutoCAD.Interop" Condition="'$(Configuration)'=='2019'">
+      <HintPath>..\..\Data\2019\Autodesk.AutoCAD.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop.Common" Condition="'$(Configuration)'=='2019'">
       <HintPath>..\..\Data\2019\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+	
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />

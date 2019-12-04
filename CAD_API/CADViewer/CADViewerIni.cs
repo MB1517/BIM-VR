@@ -45,7 +45,7 @@ namespace CADViewer
         {
 
             AcadApplication acAppComObj = null;
-            const string strProgId = "AutoCAD.Application.23";
+            const string strProgId = "AutoCAD.Application.21"; // 21 là 2017, 23 là 2019
             // Get a running instance of AutoCAD
             try
             {
@@ -63,7 +63,6 @@ namespace CADViewer
                     // If an instance of AutoCAD is not created then message and exit
                     System.Windows.Forms.MessageBox.Show("Instance of 'AutoCAD.Application'" +
                                                          " could not be created.");
-
                     return;
                 }
             }

@@ -1,11 +1,13 @@
-﻿// Khong xài extern alias nữa
-using System;
+﻿using System;
 using System.Text;
 
-
-using aar19 = Autodesk.AutoCAD.Runtime;
+using aar = Autodesk.AutoCAD.Runtime;
 using aApp = Autodesk.AutoCAD.ApplicationServices;
+using Autodesk.AutoCAD.Interop;
 
+using System.Reflection;
+using swF = System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.Geometry;
@@ -14,18 +16,17 @@ using Autodesk.AutoCAD.GraphicsInterface;
 using Autodesk.AutoCAD.Interop;
 
 using System.Reflection;
-using swF = System.Windows.Forms;
+using System.Windows.Forms;
 using System.IO;
 using System.Collections;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-
 using Microsoft.Win32;
 
 
-[assembly: aar19.ExtensionApplication(null)]
-[assembly: aar19.CommandClass(typeof(CAD_Utils.Class1))]
+[assembly: aar.ExtensionApplication(null)]
+[assembly: aar.CommandClass(typeof(CAD_Utils.Class1))]
 
 namespace CAD_Utils
 {
@@ -35,8 +36,7 @@ namespace CAD_Utils
         {
             swF.MessageBox.Show("HALO CAD");
         }
-
-        [aar19.CommandMethod("c1")]
+        [aar.CommandMethod("c1")]
         static public void DoIt1()
         {
             // Get the current document and database, and start a transaction
@@ -97,7 +97,7 @@ namespace CAD_Utils
 
 
         }
-        [aar19.CommandMethod("c2")]
+        [aar.CommandMethod("c2")]
         static public void CurrentLayerID()
         {
             // Get the current document and database, and start a transaction
@@ -107,7 +107,7 @@ namespace CAD_Utils
 
             swF.MessageBox.Show(cLayerId.ToString());
         }
-        [aar19.CommandMethod("c3")]
+        [aar.CommandMethod("c3")]
         static public void AttachXref()
         {
             string strFName, strBlkName;
@@ -119,14 +119,14 @@ namespace CAD_Utils
             objId = aApp.Application.DocumentManager.MdiActiveDocument.Database.AttachXref(strFName, strBlkName);
             swF.MessageBox.Show(objId.ToString());
         }
-        [aar19.CommandMethod("c4")]
+        [aar.CommandMethod("c4")]
         static public void DoIt4()
         {
 
             Autodesk.AutoCAD.DatabaseServices.Database acCurDb;
             acCurDb = aApp.Application.DocumentManager.MdiActiveDocument.Database;
         }
-        [aar19.CommandMethod("c5")]
+        [aar.CommandMethod("c5")]
         public static void ListEntities()
         {
             // Get the current document and database, and start a transaction
@@ -175,12 +175,12 @@ namespace CAD_Utils
                 // Dispose of the transaction
             }
         }
-        [aar19.CommandMethod("c6")]
+        [aar.CommandMethod("c6")]
         public static void UpdateScreen()
         {
             aApp.Application.UpdateScreen();
         }
-        [aar19.CommandMethod("c7")]
+        [aar.CommandMethod("c7")]
         public static void GetAllLayers()
         {
             // Get the current document and start the Transaction Manager
@@ -212,7 +212,7 @@ namespace CAD_Utils
                 mbrtb.ShowDialog();
             }
         }
-        [aar19.CommandMethod("c8")]
+        [aar.CommandMethod("c8")]
         public static void CreateNewLayer()
         {
             // Get the current document and start the Transaction Manager
@@ -254,12 +254,12 @@ namespace CAD_Utils
 
             }
         }
-        [aar19.CommandMethod("c9")]
+        [aar.CommandMethod("c9")]
         public static void FindLayer()
         {
 
         }
-        [aar19.CommandMethod("c10")]
+        [aar.CommandMethod("c10")]
         public static void EraseLayer()
         {
             // Get the current document and start the Transaction Manager
@@ -301,7 +301,7 @@ namespace CAD_Utils
                 // Dispose of the transaction
             }
         }
-        [aar19.CommandMethod("RegisterMyApp")]
+        [aar.CommandMethod("RegisterMyApp")]
         public void RegisterMyApp()
         {
             // Get the AutoCAD Applications key
@@ -335,7 +335,7 @@ namespace CAD_Utils
 
             regAcadAppKey.Close();
         }
-        [aar19.CommandMethod("UnregisterMyApp")]
+        [aar.CommandMethod("UnregisterMyApp")]
         public void UnregisterMyApp()
         {
             // Get the AutoCAD Applications key
@@ -349,7 +349,7 @@ namespace CAD_Utils
             regAcadAppKey.DeleteSubKeyTree(sAppName);
             regAcadAppKey.Close();
         }
-        [aar19.CommandMethod("ConnectToAcad")]
+        [aar.CommandMethod("ConnectToAcad")]
         public static void ConnectToAcad()
         {
 
@@ -398,8 +398,7 @@ namespace CAD_Utils
 
             acDocComObj.SendCommand("c7 ");
         }
-
-        [aar19.CommandMethod("CheckForPickfirstSelection", aar19.CommandFlags.UsePickSet | aar19.CommandFlags.NoBlockEditor)]
+        [aar.CommandMethod("CheckForPickfirstSelection", aar.CommandFlags.UsePickSet | aar.CommandFlags.NoBlockEditor)]
         public static void CheckForPickfirstSelection()
         {
 
