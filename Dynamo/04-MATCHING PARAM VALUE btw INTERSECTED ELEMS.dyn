@@ -1,4 +1,4 @@
-<Workspace Version="0.9.1.4062" X="710.14282510611" Y="836.437294565151" zoom="0.622037938374034" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+<Workspace Version="0.9.1.4062" X="-880.44852727892" Y="798.99499096312" zoom="0.940916251457071" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
   <NamespaceResolutionMap />
   <Elements>
     <CoreNodeModels.Input.StringInput guid="3e617196-2d54-48d5-b5d3-79c063737ee9" type="CoreNodeModels.Input.StringInput" nickname="String" x="-515.455993899312" y="-499.239512240409" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false">
@@ -19,6 +19,9 @@
       <instance id="ca806447-f2f1-431f-a361-22dabe184c27-00055155" />
       <instance id="ca806447-f2f1-431f-a361-22dabe184c27-00055157" />
       <instance id="ca806447-f2f1-431f-a361-22dabe184c27-000551e6" />
+      <instance id="22a9202c-9a46-4379-a24f-ce6defbeb402-00055782" />
+      <instance id="22a9202c-9a46-4379-a24f-ce6defbeb402-00055784" />
+      <instance id="22a9202c-9a46-4379-a24f-ce6defbeb402-0005578c" />
     </Dynamo.Nodes.DSModelElementsSelection>
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="a4f1820a-eabd-485a-b15d-dcae389e795c" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.GetParameterValueByName" x="-322.675043764792" y="-777.411178669976" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.GetParameterValueByName@string" />
     <CoreNodeModels.Input.StringInput guid="9d310ea9-f1b7-415e-93b8-2fe088d6838c" type="CoreNodeModels.Input.StringInput" nickname="String" x="-517.634293406961" y="-619.890642024059" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false">
@@ -33,7 +36,7 @@
     <CoreNodeModels.FromObject guid="0f44281b-b9ef-492b-a3db-02907e9eefa3" type="CoreNodeModels.FromObject" nickname="String from Object" x="-18.9767346553409" y="-512.432754717924" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" />
     <CoreNodeModels.FromObject guid="9e866c9b-2c9a-482d-a21b-697b9198c1da" type="CoreNodeModels.FromObject" nickname="String from Object" x="-10.190715272841" y="-330.047507032925" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" />
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="4f698fe8-600b-485b-9a3a-6371e5dfc860" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="749.995728645" y="-562.283883705" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="foundations;&#xA;columns;" ShouldFocus="false" />
-    <PythonNodeModels.PythonNode guid="409cb3e7-fb77-4187-a316-7d886be0069a" type="PythonNodeModels.PythonNode" nickname="Python Script" x="1062.11627124134" y="-384.276186364443" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" inputcount="1">
+    <PythonNodeModels.PythonNode guid="409cb3e7-fb77-4187-a316-7d886be0069a" type="PythonNodeModels.PythonNode" nickname="Python Script-Get Join Elements" x="1042.9859820449" y="-389.590155585675" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" inputcount="1">
       <Script>import clr
 clr.AddReference('ProtoGeometry')
 from Autodesk.DesignScript.Geometry import *
@@ -100,13 +103,14 @@ for i in range(len(sol1)):
 	for j in range(len(sol2)):	
 		if sol1[i].	DoesIntersect(sol2[j]):			
 			list.append(elem2[j])
-	res.append(list)
+	if len(list) &gt; 1:
+		res.append(list)
 
 	
 #Assign your output to the OUT variable.
 OUT = res</Script>
     </PythonNodeModels.PythonNode>
-    <PythonNodeModels.PythonNode guid="21f58a4c-d20d-4c0f-8165-4f79f818cfaf" type="PythonNodeModels.PythonNode" nickname="Python Script" x="1213.06909574593" y="-755.261009998119" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" inputcount="1">
+    <PythonNodeModels.PythonNode guid="21f58a4c-d20d-4c0f-8165-4f79f818cfaf" type="PythonNodeModels.PythonNode" nickname="Python Script-UnionAll" x="1213.06909574593" y="-755.261009998119" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" inputcount="1">
       <Script>import clr
 clr.AddReference('ProtoGeometry')
 from Autodesk.DesignScript.Geometry import *
@@ -124,7 +128,7 @@ for list in listSol:
 #Assign your output to the OUT variable.
 OUT = newlist</Script>
     </PythonNodeModels.PythonNode>
-    <PythonNodeModels.PythonNode guid="71e6c4f9-c1d7-40e8-b2b2-7e7b5a8a82be" type="PythonNodeModels.PythonNode" nickname="Python Script" x="1222.20511937028" y="-568.189736309669" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" inputcount="1">
+    <PythonNodeModels.PythonNode guid="71e6c4f9-c1d7-40e8-b2b2-7e7b5a8a82be" type="PythonNodeModels.PythonNode" nickname="Python Script-UnionAll" x="1222.20511937028" y="-568.189736309669" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" inputcount="1">
       <Script>import clr
 clr.AddReference('ProtoGeometry')
 from Autodesk.DesignScript.Geometry import *
@@ -208,7 +212,6 @@ OUT = 0
     <Dynamo.Graph.Connectors.ConnectorModel start="8c42dbc5-c2d7-400d-9741-9e9416670fe4" start_index="0" end="c48db446-21a5-4c2a-b650-9cc1a572c02a" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="8c42dbc5-c2d7-400d-9741-9e9416670fe4" start_index="0" end="b19b8df5-ed28-4ca3-a94d-458e5f007d29" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="a4f1820a-eabd-485a-b15d-dcae389e795c" start_index="0" end="41872771-aca7-4d10-a603-0078cea06619" end_index="0" portType="0" />
-    <Dynamo.Graph.Connectors.ConnectorModel start="9d310ea9-f1b7-415e-93b8-2fe088d6838c" start_index="0" end="a4f1820a-eabd-485a-b15d-dcae389e795c" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="f7766f5c-cf68-43d4-9200-0ea454007911" start_index="0" end="c48db446-21a5-4c2a-b650-9cc1a572c02a" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="6b27b19b-f38d-4895-863c-742c705b2723" start_index="0" end="b19b8df5-ed28-4ca3-a94d-458e5f007d29" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="c48db446-21a5-4c2a-b650-9cc1a572c02a" start_index="0" end="4f698fe8-600b-485b-9a3a-6371e5dfc860" end_index="0" portType="0" />
@@ -232,7 +235,7 @@ OUT = 0
   </Connectors>
   <Notes />
   <Annotations>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="996d0f56-a47f-4377-bb60-ade6a326f905" annotationText="&lt;Click here to edit the group title&gt;" left="-965.405460185193" top="-688.724610005874" width="288.675164334403" height="317.578330612887" fontSize="14" InitialTop="-658.724610005874" InitialHeight="317.578330612887" TextblockHeight="20" backgrouund="#FFC1D676">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="996d0f56-a47f-4377-bb60-ade6a326f905" annotationText="&lt;Click here to edit the group title&gt;" left="-965.405460185193" top="-688.724610005874" width="301" height="317.578330612887" fontSize="14" InitialTop="-658.724610005874" InitialHeight="317.578330612887" TextblockHeight="20" backgrouund="#FFC1D676">
       <Models ModelGuid="8c42dbc5-c2d7-400d-9741-9e9416670fe4" />
       <Models ModelGuid="5fa85954-22c0-4f1a-8ce1-be7ebb3af85a" />
       <Models ModelGuid="564e0f63-fc52-4bb6-95c1-28fc3ddf2153" />
