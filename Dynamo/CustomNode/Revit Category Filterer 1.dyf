@@ -1,0 +1,44 @@
+<Workspace Version="0.9.1.4062" X="0" Y="0" zoom="1" Name="Revit Category Filterer 1" Description="" ID="0a46c85c-8354-4305-9206-9341170d96bd" Category="Revit.Selection">
+  <NamespaceResolutionMap />
+  <Elements>
+    <PythonNodeModels.PythonNode guid="f248ebfa-0dcd-48f5-8ab2-9efe7a1dae96" type="PythonNodeModels.PythonNode" nickname="Python Script-Filterer" x="609.087696431599" y="366.490434818517" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" inputcount="2">
+      <Script>import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+#The inputs to this node will be stored as a list in the IN variables.
+dataEnteringNode = IN
+elems = IN[0]
+cateName = IN[1]
+
+res = []
+
+for e in elems:
+	ee = UnwrapElement(e)
+	if ee.Category.Name == cateName:
+		res.append(e)
+
+#Assign your output to the OUT variable.
+OUT = res</Script>
+    </PythonNodeModels.PythonNode>
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="8537b6c6-aee7-4bae-9492-62b617072248" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="List Elements" x="345" y="328" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false">
+      <Symbol value="" />
+    </Dynamo.Graph.Nodes.CustomNodes.Symbol>
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="03665b85-9af2-4bb7-9a8d-253cd4d1e3da" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="CategoryName" x="339" y="433" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false">
+      <Symbol value="" />
+    </Dynamo.Graph.Nodes.CustomNodes.Symbol>
+    <Dynamo.Graph.Nodes.CustomNodes.Output guid="2b2a0c6c-5640-479f-b3d5-869ba32b91c3" type="Dynamo.Graph.Nodes.CustomNodes.Output" nickname="Category Elements" x="806" y="378" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false">
+      <Symbol value="" />
+    </Dynamo.Graph.Nodes.CustomNodes.Output>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="f248ebfa-0dcd-48f5-8ab2-9efe7a1dae96" start_index="0" end="2b2a0c6c-5640-479f-b3d5-869ba32b91c3" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="8537b6c6-aee7-4bae-9492-62b617072248" start_index="0" end="f248ebfa-0dcd-48f5-8ab2-9efe7a1dae96" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="03665b85-9af2-4bb7-9a8d-253cd4d1e3da" start_index="0" end="f248ebfa-0dcd-48f5-8ab2-9efe7a1dae96" end_index="1" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-1152.91735839844" eyeY="15137.03515625" eyeZ="-10089.388671875" lookX="-2181.68969726563" lookY="-12824.5048828125" lookZ="9457.94140625" upX="-0.145976603031158" upY="0.760405957698822" upZ="0.63282984495163" />
+  </Cameras>
+</Workspace>
