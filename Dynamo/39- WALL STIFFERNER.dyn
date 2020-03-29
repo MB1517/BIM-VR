@@ -1,0 +1,166 @@
+<Workspace Version="0.9.1.4062" X="-1691.39022485949" Y="-268.055040437813" zoom="1.5729902778086" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Nodes.DSModelElementsSelection guid="bf93bad8-5e8f-474e-ad65-ae8aeb237809" type="Dynamo.Nodes.DSModelElementsSelection" nickname="Select Model Elements" x="121.6" y="214.4" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false">
+      <instance id="7854e828-493a-47be-bb9b-e960e94b15fb-0004d6d0" />
+      <instance id="7854e828-493a-47be-bb9b-e960e94b15fb-0004d6ed" />
+      <instance id="7854e828-493a-47be-bb9b-e960e94b15fb-0004d701" />
+      <instance id="7854e828-493a-47be-bb9b-e960e94b15fb-0004d749" />
+      <instance id="7854e828-493a-47be-bb9b-e960e94b15fb-0004d77b" />
+      <instance id="7854e828-493a-47be-bb9b-e960e94b15fb-0004d77c" />
+      <instance id="7854e828-493a-47be-bb9b-e960e94b15fb-0004d77d" />
+      <instance id="7854e828-493a-47be-bb9b-e960e94b15fb-0004d77e" />
+      <instance id="7854e828-493a-47be-bb9b-e960e94b15fb-0004d78b" />
+      <instance id="7854e828-493a-47be-bb9b-e960e94b15fb-0004d78c" />
+      <instance id="7854e828-493a-47be-bb9b-e960e94b15fb-0004d78d" />
+      <instance id="7854e828-493a-47be-bb9b-e960e94b15fb-0004d78e" />
+      <instance id="b10e8df3-8f74-46e5-8b37-5b33bbff988b-0004d7e1" />
+      <instance id="b10e8df3-8f74-46e5-8b37-5b33bbff988b-0004d7ff" />
+      <instance id="b10e8df3-8f74-46e5-8b37-5b33bbff988b-0004d82d" />
+    </Dynamo.Nodes.DSModelElementsSelection>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="45e63705-e0ca-4562-bf22-371ee30fb8ee" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Revit Category Filterer 1" x="524.323254552913" y="182.098849815385" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false">
+      <ID value="0a46c85c-8354-4305-9206-9341170d96bd" />
+      <Name value="Revit Category Filterer 1" />
+      <Description value="" />
+      <Inputs>
+        <Input value="" />
+        <Input value="" />
+      </Inputs>
+      <Outputs>
+        <Output value="" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="defc9fec-9d91-4aac-af4e-f00d791932b6" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Filter" x="290.796451510719" y="353.263666329777" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="&quot;Walls&quot;;" ShouldFocus="false" />
+    <PythonNodeModels.PythonNode guid="8dffbaff-0edd-4d63-9c2c-11692cc8ec7c" type="PythonNodeModels.PythonNode" nickname="Python Script-Get Wall Curve" x="834.03277884323" y="234.585820663582" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" inputcount="1">
+      <Script>import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+clr.AddReference('RevitAPI')
+from Autodesk.Revit.DB import *
+clr.AddReference('RevitAPIUI')
+from Autodesk.Revit.UI import TaskDialog
+clr.AddReference("RevitNodes")
+import Revit
+clr.ImportExtensions(Revit.Elements)
+clr.AddReference("RevitServices")
+import RevitServices
+from RevitServices.Persistence import DocumentManager
+from RevitServices.Transactions import TransactionManager
+from System.Collections.Generic import *
+clr.ImportExtensions(Revit.GeometryConversion)
+ 
+ 
+ 
+doc = DocumentManager.Instance.CurrentDBDocument
+uiapp = DocumentManager.Instance.CurrentUIApplication
+app = uiapp.Application
+
+#The inputs to this node will be stored as a list in the IN variables.
+dataEnteringNode = IN
+walls = UnwrapElement(IN[0])
+
+res = []
+
+opt = Options()
+
+for w in walls:	
+	loc = w.Location
+	c = loc.Curve
+	res.append(c.ToProtoType())
+
+
+#Assign your output to the OUT variable.
+OUT = res</Script>
+    </PythonNodeModels.PythonNode>
+    <PythonNodeModels.PythonNode guid="194d3331-dfe6-40b5-b47f-178e1cb07981" type="PythonNodeModels.PythonNode" nickname="Python Script-Get Wall Solid" x="831.360538240334" y="66.2894017809133" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="true" inputcount="1">
+      <Script>import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+clr.AddReference('RevitAPI')
+from Autodesk.Revit.DB import *
+clr.AddReference('RevitAPIUI')
+from Autodesk.Revit.UI import TaskDialog
+clr.AddReference("RevitNodes")
+import Revit
+clr.ImportExtensions(Revit.Elements)
+clr.AddReference("RevitServices")
+import RevitServices
+from RevitServices.Persistence import DocumentManager
+from RevitServices.Transactions import TransactionManager
+from System.Collections.Generic import *
+clr.ImportExtensions(Revit.GeometryConversion)
+ 
+doc = DocumentManager.Instance.CurrentDBDocument
+uiapp = DocumentManager.Instance.CurrentUIApplication
+app = uiapp.Application
+
+#The inputs to this node will be stored as a list in the IN variables.
+dataEnteringNode = IN
+walls = UnwrapElement(IN[0])
+
+def getCurves(geoElems):
+	res = []		
+	return 0
+
+res = []
+
+opt = Options()
+
+for w in walls:	
+	geoElem = w.get_Geometry(opt)
+	
+	for geoObj in geoElem:
+		res.append(geoObj.ToString())
+
+
+#Assign your output to the OUT variable.
+OUT = res</Script>
+    </PythonNodeModels.PythonNode>
+    <PythonNodeModels.PythonNode guid="364e0b6f-bf8e-4cbe-83b2-67d59b2eddc9" type="PythonNodeModels.PythonNode" nickname="Python Script-Get Wall Curve" x="1097.85205819527" y="234.685539413329" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" inputcount="1">
+      <Script>import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+
+ 
+ 
+
+#The inputs to this node will be stored as a list in the IN variables.
+dataEnteringNode = IN
+curves = IN[0]
+
+def getIntersectPoints(curves):
+	res = []	
+	still = True
+	i = 1
+	while i &lt; len(curves):
+		c0 = curves[i-1]		
+		rest = curves[i:]		
+		for c in rest:
+			flag = c0.DoesIntersect(c)
+			if flag:
+				p = c0.Intersect(c)
+				res.append(p)
+		i+=1
+	return res
+
+res = getIntersectPoints(curves)
+#Assign your output to the OUT variable.
+OUT = res</Script>
+    </PythonNodeModels.PythonNode>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="89900886-6e27-4719-8840-c50bc2160f62" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Flatten" x="1401.27390229662" y="226.864110651062" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" assembly="BuiltIn" function="Flatten@var[]..[]" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="bf93bad8-5e8f-474e-ad65-ae8aeb237809" start_index="0" end="45e63705-e0ca-4562-bf22-371ee30fb8ee" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="45e63705-e0ca-4562-bf22-371ee30fb8ee" start_index="0" end="8dffbaff-0edd-4d63-9c2c-11692cc8ec7c" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="45e63705-e0ca-4562-bf22-371ee30fb8ee" start_index="0" end="194d3331-dfe6-40b5-b47f-178e1cb07981" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="defc9fec-9d91-4aac-af4e-f00d791932b6" start_index="0" end="45e63705-e0ca-4562-bf22-371ee30fb8ee" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="8dffbaff-0edd-4d63-9c2c-11692cc8ec7c" start_index="0" end="364e0b6f-bf8e-4cbe-83b2-67d59b2eddc9" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="364e0b6f-bf8e-4cbe-83b2-67d59b2eddc9" start_index="0" end="89900886-6e27-4719-8840-c50bc2160f62" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="26296.8377116205" eyeY="69436.821263975" eyeZ="-15055.0350814346" lookX="-28.8777955320111" lookY="-62799.7519374651" lookZ="8737.03047944632" upX="-0.00309982317494424" upY="0.346935639487587" upZ="0.937883817403572" />
+  </Cameras>
+</Workspace>
