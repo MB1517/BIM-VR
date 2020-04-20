@@ -1,4 +1,4 @@
-<Workspace Version="0.9.1.4062" X="-7183.8177826621" Y="858.256327177604" zoom="0.590117389039676" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
+<Workspace Version="0.9.1.4062" X="-12217.4144438499" Y="1125.9614179864" zoom="1.03614076959666" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
   <NamespaceResolutionMap>
     <ClassMap partialName="String" resolvedName="DSCore.String" assemblyName="DSCoreNodes.dll" />
     <ClassMap partialName="Point" resolvedName="Autodesk.DesignScript.Geometry.Point" assemblyName="ProtoGeometry.dll" />
@@ -394,11 +394,11 @@ for i in range(len(listPoints)):
 #Assign your output to the OUT variable.
 OUT = res</Script>
     </PythonNodeModels.PythonNode>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="66578773-40c3-46f2-b7fe-250e8b0de38c" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Surface.ByPerimeterPoints" x="12284.0428372692" y="-843.922242253327" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Surface.ByPerimeterPoints@Autodesk.DesignScript.Geometry.Point[]" />
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="66578773-40c3-46f2-b7fe-250e8b0de38c" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Surface.ByPerimeterPoints" x="12229.0310071467" y="-1090.99291789101" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Surface.ByPerimeterPoints@Autodesk.DesignScript.Geometry.Point[]" />
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="ba42e56b-056f-4084-99d6-d167913c2e2b" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Curve.StartPoint" x="9513.87202493068" y="-1584.15367380434" isVisible="false" isUpstreamVisible="false" lacing="Shortest" isSelectedInput="False" IsFrozen="false" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Curve.StartPoint" />
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="cae216bf-ca93-44a2-a4ac-2b5625ce0cfd" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Geometry.Explode" x="9274.11656990223" y="-1556.82176743101" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Geometry.Explode" />
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="3a2ac981-2609-495b-b70c-bde7cd6fd63a" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Surface.ByPerimeterPoints" x="9746.10541289118" y="-1579.58500933799" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Surface.ByPerimeterPoints@Autodesk.DesignScript.Geometry.Point[]" />
-    <Dynamo.Graph.Nodes.CustomNodes.Function guid="af631847-b5a1-41a4-a6ca-3a3bc2cbd4db" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Solid By Merged Surfaces 1" x="12637.5496861156" y="-954.307014057799" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="true">
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="af631847-b5a1-41a4-a6ca-3a3bc2cbd4db" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Solid By Merged Surfaces 1" x="12701.2475946784" y="-935.004617523605" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false">
       <ID value="e598c2b9-fac3-4d11-a6e1-3a4cb54a2fdf" />
       <Name value="Solid By Merged Surfaces 1" />
       <Description value="" />
@@ -410,7 +410,7 @@ OUT = res</Script>
         <Output value="solid" />
       </Outputs>
     </Dynamo.Graph.Nodes.CustomNodes.Function>
-    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="94817e3d-689d-4684-92c6-60afc07b934b" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="12240" y="-1021" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="bottomSurfaces;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="94817e3d-689d-4684-92c6-60afc07b934b" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="12191.7440086645" y="-741.115250254183" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="bottomSurfaces;" ShouldFocus="false" />
   </Elements>
   <Connectors>
     <Dynamo.Graph.Connectors.ConnectorModel start="f054f377-0182-474a-8a16-6fb4019099ec" start_index="0" end="8366ef76-cd7d-465b-a71f-dd982d670674" end_index="0" portType="0" />
@@ -768,6 +768,6 @@ OUT = res</Script>
   </Annotations>
   <Presets />
   <Cameras>
-    <Camera Name="Background Preview" eyeX="-190.490020751953" eyeY="88.9216384887695" eyeZ="5.99914503097534" lookX="120.158004760742" lookY="-98.1337356567383" lookZ="-89.9244537353516" upX="0.284305810928345" upY="0.934825658798218" upZ="-0.212770208716393" />
+    <Camera Name="Background Preview" eyeX="-198896.433263628" eyeY="138237.335903305" eyeZ="28078.3145753182" lookX="194593.806673841" lookY="-142561.769162756" lookZ="-132795.816083568" upX="0.26618944143235" upY="0.946649242582391" upZ="-0.181654509937128" />
   </Cameras>
 </Workspace>
