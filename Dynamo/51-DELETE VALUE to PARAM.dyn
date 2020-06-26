@@ -1,4 +1,4 @@
-<Workspace Version="0.9.1.4062" X="210.143781826666" Y="-141.522309988298" zoom="0.755476505255712" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
+<Workspace Version="0.9.1.4062" X="429.764894749101" Y="187.868856535369" zoom="0.257064977904201" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
   <NamespaceResolutionMap>
     <ClassMap partialName="String" resolvedName="DSCore.String" assemblyName="DSCoreNodes.dll" />
   </NamespaceResolutionMap>
@@ -154,7 +154,7 @@
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="1d372e82-9d60-4f03-9a56-d796d9730fd8" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="category" x="296.563606727042" y="414.508710177965" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="&quot;Structural Foundations&quot;;&#xA;&quot;Structural Columns&quot;;&#xA;&quot;Structural Framing&quot;;&#xA;&quot;Floors&quot;;&#xA;&quot;Walls&quot;;&#xA;&quot;Stairs&quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="df89a296-5c13-4538-a998-11a0c102ed93" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.SetParameterByName" x="2088.19218520865" y="-233.836234074668" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.SetParameterByName@string,var" />
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="d43bdab2-f3be-49d1-b5fc-4bd4491afb4f" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Tên param" x="18.4431063865484" y="564.429609883894" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="&quot;QTO Filter&quot;;" ShouldFocus="false" />
-    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="97adfd63-57eb-4e07-93ac-57c2ff7ce160" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="540.51470243207" y="694.865126249219" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="param;&#xA;value;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="97adfd63-57eb-4e07-93ac-57c2ff7ce160" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="491.90652923395" y="664.311417381829" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="param;&#xA;value = &quot;&quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CustomNodes.Function guid="fcb2d633-306c-49ec-bf45-8b3cafd595ef" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Revit Category Filterer 1" x="741.527328567456" y="170.5989171147" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false">
       <ID value="0a46c85c-8354-4305-9206-9341170d96bd" />
       <Name value="Revit Category Filterer 1" />
@@ -215,7 +215,7 @@
         <Output value="elems" />
       </Outputs>
     </Dynamo.Graph.Nodes.CustomNodes.Function>
-    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="2b2f48f5-90f3-41aa-a7aa-4d989ca63c7c" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="giá trị" x="367.149909774528" y="740.059080652776" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="c+v;&#xA;v;&#xA;true;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="2b2f48f5-90f3-41aa-a7aa-4d989ca63c7c" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="giá trị" x="361.594689980457" y="806.721718181626" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="c+v;&#xA;v;&#xA;true;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="8db61bdf-a72c-422e-aeb2-91c2516c04ad" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Ký tự nối" x="202.292943245129" y="669.350120627654" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="&quot;, &quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="dbc99de2-5798-4d3a-997d-e8319e1c176f" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Giá trị" x="36.4740536513544" y="766.373740817699" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="&quot;Sub&quot;;&#xA;&quot;BaseCap&quot;;&#xA;&quot;Plastic Sheet&quot;;&#xA;&quot;Formwork&quot;;&#xA;&quot;Earthwork&quot;;&#xA;&quot;Leveling Level -350&quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.CustomNodes.Function guid="29393909-98f6-4070-a9da-bc08e97eb43b" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Revit Category Filterer 1" x="741.527328567456" y="957.131982256901" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false">
@@ -314,7 +314,6 @@
     <Dynamo.Graph.Connectors.ConnectorModel start="ee861fa9-cff9-4a9f-a714-0980692b32d3" start_index="0" end="c56f6afa-78d0-467d-9812-954d5b6a2409" end_index="2" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="09255df6-f9ef-450f-bef8-466a54e58000" start_index="0" end="2aa6292b-9595-4396-b199-5dca645ae0a0" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="09255df6-f9ef-450f-bef8-466a54e58000" start_index="0" end="4a6ca1df-1000-466c-84d2-24c654503b5d" end_index="2" portType="0" />
-    <Dynamo.Graph.Connectors.ConnectorModel start="2b2f48f5-90f3-41aa-a7aa-4d989ca63c7c" start_index="0" end="97adfd63-57eb-4e07-93ac-57c2ff7ce160" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="2b2f48f5-90f3-41aa-a7aa-4d989ca63c7c" start_index="1" end="91e5ec4e-4bb0-4a2e-8c3b-218807361073" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="2b2f48f5-90f3-41aa-a7aa-4d989ca63c7c" start_index="2" end="91e5ec4e-4bb0-4a2e-8c3b-218807361073" end_index="2" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="2b2f48f5-90f3-41aa-a7aa-4d989ca63c7c" start_index="2" end="2ef55add-519d-47bb-a7cd-c54b75355e25" end_index="2" portType="0" />
