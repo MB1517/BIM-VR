@@ -23,7 +23,7 @@ using System.Runtime.InteropServices;
 using System.Diagnostics;
 
 using Microsoft.Win32;
-
+using System.Text.RegularExpressions;
 
 [assembly: aar.ExtensionApplication(null)]
 [assembly: aar.CommandClass(typeof(CAD_Utils.Class1))]
@@ -405,8 +405,9 @@ namespace CAD_Utils
         #endregion
 
         [aar.CommandMethod("a1")]
-        public static void newCommand()
-        { // Get the current document and start the Transaction Manager
+        public static void GetAllTextData()
+        {
+            // Get the current document and start the Transaction Manager
             try
             {
                 aApp.Document aDoc = aApp.Application.DocumentManager.MdiActiveDocument;
@@ -414,7 +415,6 @@ namespace CAD_Utils
                 using (Transaction tr = acCurDb.TransactionManager.StartTransaction())
                 {
                     StringBuilder sb = new StringBuilder();
-                    StringBuilder sb2 = new StringBuilder();
 
                     List<BlockTableRecord> blTRC = new List<BlockTableRecord>();
                     List<MText> listMtext = new List<MText>();
@@ -431,8 +431,8 @@ namespace CAD_Utils
                         BlockTableRecord blockTBrec;
                         blockTBrec = tr.GetObject(blockTBId, OpenMode.ForRead) as BlockTableRecord;
                         blTRC.Add(blockTBrec);
-                        sb.AppendLine(blockTBrec.Name);
-                        if (blockTBrec.Name=="*Model_Space")
+                        //sb.AppendLine(blockTBrec.Name);
+                        if (blockTBrec.Name == "*Model_Space")
                         {
                             blockRcModel = blockTBrec;
                         }
@@ -442,7 +442,7 @@ namespace CAD_Utils
                     while (bltrEn.MoveNext())
                     {
                         string name = tr.GetObject(bltrEn.Current, OpenMode.ForRead).GetType().Name;
-                        sb.AppendLine(name);
+                        //sb.AppendLine(name);
                         if (name == "MText")
                         {
                             listMtext.Add(tr.GetObject(bltrEn.Current, OpenMode.ForRead) as MText);
@@ -453,31 +453,34 @@ namespace CAD_Utils
                         }
                         if (name == "BlockReference")
                         {
-                            BlockReference blr = tr.GetObject(bltrEn.Current, OpenMode.ForRead) as BlockReference;                            
+                            BlockReference blr = tr.GetObject(bltrEn.Current, OpenMode.ForRead) as BlockReference;
                             listBlockref.Add(blr);
-                            //sb2.AppendLine(FindBlockAttribute(tr, blr).ToString());
                         }
                     }
 
                     foreach (MText mt in listMtext)
                     {
-                        string mtx = String.Format("{0}\t{1}\t{2}\t",mt.Contents,mt.Location.X,mt.Location.Y);
-                        sb.AppendLine(mtx);
+                        string mtx = String.Format("MText\t{0}\t{1}\t{2}\t", mt.Contents, mt.Location.X, mt.Location.Y);
+                        if (mtx.Length > 0) sb.AppendLine(mtx);
                     }
                     foreach (DBText dt in listDBText)
                     {
-                        string dtx = String.Format("{0}\t{1}\t{2}", dt.TextString, dt.Position.X, dt.Position.Y);
-                        sb.AppendLine(dtx);
+                        string dtx = String.Format("DBText\t{0}\t{1}\t{2}", dt.TextString, dt.Position.X, dt.Position.Y);
+                        if (dtx.Length > 0) sb.AppendLine(dtx);
                     }
                     foreach (BlockReference blr in listBlockref)
                     {
-                        string blstr = String.Format("{0}\t{1}\t{2}\t{3}"
-                            , blr.Name, blr.Position.X, blr.Position.Y,blr.BlockTransform.CoordinateSystem3d.Origin);
-                        sb.AppendLine(blstr);
+                        string blstr = String.Format("BlockReference\t{0}\t{1}\t{2}\t{3}"
+                            , blr.Name, blr.Position.X, blr.Position.Y, blr.BlockTransform.CoordinateSystem3d.Origin);
+
+                        if (blstr.Length > 0) sb.AppendLine(blstr);
+                        sb.AppendLine(FindBlockAttribute(tr, blr).ToString());
                     }
 
                     //MessageBox.Show(sb.ToString());
-                    MessageBoxRichTextBox mbrtb = new MessageBoxRichTextBox(sb2.ToString());
+                    string strsb = Regex.Replace(sb.ToString(), @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline);
+
+                    MessageBoxRichTextBox mbrtb = new MessageBoxRichTextBox(strsb);
                     mbrtb.Show();
                     tr.Commit();
                 }
@@ -487,18 +490,35 @@ namespace CAD_Utils
                 MessageBox.Show(e.Message);
             }
         }
-        public static StringBuilder FindBlockAttribute(Transaction tr,BlockReference blr)
+        public static StringBuilder FindBlockAttribute(Transaction tr, BlockReference bl)
         {
-            StringBuilder sb2 = new StringBuilder();
-
-            AttributeCollection attcol = blr.AttributeCollection as AttributeCollection;
-            while (attcol.GetEnumerator().MoveNext())
+            StringBuilder sb = new StringBuilder();
+            if (bl != null)
             {
-                string name = attcol.GetEnumerator().Current.GetType().Name;
-                //AttributeDefinition atdef = tr.GetObject(cur, OpenMode.ForRead) as AttributeDefinition;
-                sb2.AppendLine(name);
+                AttributeCollection attcol = bl.AttributeCollection as AttributeCollection;
+                if (attcol.Count > 0)
+                {
+                    for (int i = 0; i < attcol.Count; i++)
+                    {
+                        AttributeReference attref = tr.GetObject(attcol[i], OpenMode.ForRead) as AttributeReference;
+                        string st = string.Format("{0} : AttributeReference\t{1}\t{2}\t{3}", bl.Name, attref.TextString, attref.Position.X, attref.Position.Y);
+                        if (st.Length > 0) sb.AppendLine(st);
+                    }
+                    BlockTableRecord BlockTableRecord = tr.GetObject(bl.BlockTableRecord, OpenMode.ForRead) as BlockTableRecord;
+                    BlockTableRecordEnumerator bltrEnum = BlockTableRecord.GetEnumerator();
+
+                    while (bltrEnum.MoveNext())
+                    {
+                        if (tr.GetObject(bltrEnum.Current, OpenMode.ForRead).GetType().Name == "BlockReference")
+                        {
+                            BlockReference bl2 = tr.GetObject(bltrEnum.Current, OpenMode.ForRead) as BlockReference;
+                            sb.AppendLine(FindBlockAttribute(tr, bl2).ToString());
+                        }
+                    }
+                }
+
             }
-            return sb2;
+            return sb;
         }
         [aar.CommandMethod("a2")]
         public static void newCommand2()
@@ -507,12 +527,13 @@ namespace CAD_Utils
             Database db = doc.Database;
             Editor ed = doc.Editor;
 
+            StringBuilder sb = new StringBuilder();
 
-            PromptEntityOptions opt = new PromptEntityOptions("\nSelect an MText object containing field(s): ");
+            PromptEntityOptions opt = new PromptEntityOptions("\nSelect an Block: ");
 
-            opt.SetRejectMessage("\nObject must be MText.");
+            opt.SetRejectMessage("\nObject must be Block");
 
-            opt.AddAllowedClass(typeof(MText), false);
+            opt.AddAllowedClass(typeof(BlockReference), false);
 
             PromptEntityResult res = ed.GetEntity(opt);
             if (res.Status == PromptStatus.OK)
@@ -520,225 +541,69 @@ namespace CAD_Utils
                 Transaction tr = doc.TransactionManager.StartTransaction();
                 using (tr)
                 {
-                    // Check the entity is an MText object
                     DBObject obj = tr.GetObject(res.ObjectId, OpenMode.ForRead);
-                    MText mt = obj as MText;
-                    if (mt != null)
+                    BlockReference bl = obj as BlockReference;
+                    if (bl != null)
                     {
-                        if (!mt.HasFields)
+                        AttributeCollection attcol = bl.AttributeCollection as AttributeCollection;
+                        for (int i = 0; i < attcol.Count; i++)
                         {
-                            ed.WriteMessage("\nMText object does not contain fields.");
+                            AttributeReference attref = tr.GetObject(attcol[i], OpenMode.ForRead) as AttributeReference;
+                            //attref.AlignmentPoint.X
+
+                            string st = string.Format("{0}\t{1}\t{2}\t{3}", bl.Name, attref.TextString, attref.Position.X, attref.Position.Y);
+                            sb.AppendLine(st);
+
                         }
-                        else
+                        BlockTableRecord BlockTableRecord = tr.GetObject(bl.BlockTableRecord, OpenMode.ForRead) as BlockTableRecord;
+                        BlockTableRecordEnumerator bltrEnum = BlockTableRecord.GetEnumerator();
+                        while (bltrEnum.MoveNext())
                         {
-                            // Open the extension dictionary
-                            DBDictionary extDict = (DBDictionary)tr.GetObject(mt.ExtensionDictionary, OpenMode.ForRead);
-                            const string fldDictName = "ACAD_FIELD";
-                            const string fldEntryName = "TEXT";
-                        }
-                    }
-                }
-
-            }
-            //// Get the current document and start the Transaction Manager
-            //aApp.Document aDoc = aApp.Application.DocumentManager.MdiActiveDocument;
-            //Database acCurDb = aDoc.Database;
-            //using (Transaction acTrans = acCurDb.TransactionManager.StartTransaction())
-            //{
-            //    // This example returns the layer table for the current database
-            //    BlockTable blockTableIds;
-            //    blockTableIds = acTrans.GetObject(acCurDb.BlockTableId, OpenMode.ForRead) as BlockTable;
-            //    // Step through the Layer table and print each layer name
-            //    StringBuilder sb = new StringBuilder();
-            //    foreach (ObjectId blockTBId in blockTableIds)
-            //    {
-            //        BlockTableRecord blockTBrec;
-            //        blockTBrec = acTrans.GetObject(blockTBId, OpenMode.ForRead) as BlockTableRecord;
-
-            //        sb.AppendLine(blockTBrec.Name);
-            //    }
-
-            //    aDoc.Editor.WriteMessage(sb.ToString());
-
-            //    swF.MessageBox.Show(sb.ToString());
-
-            //    MessageBoxRichTextBox mbrtb = new MessageBoxRichTextBox(sb.ToString());
-            //    mbrtb.ShowDialog();
-            //}
-        }
-        [aar.CommandMethod("GFL")]
-
-        static public void GetFieldLink()
-
-        {
-            aApp.Document doc = aApp.Application.DocumentManager.MdiActiveDocument;
-            Database db = doc.Database;
-            Editor ed = doc.Editor;
-            
-            // Ask the user to select an attribute or an mtext
-
-            PromptEntityOptions opt = new PromptEntityOptions( "\nSelect an MText object containing field(s): ");
-
-            opt.SetRejectMessage("\nObject must be MText." );
-
-            opt.AddAllowedClass(typeof(MText), false);
-
-            PromptEntityResult res =ed.GetEntity(opt);
-
-            if (res.Status == PromptStatus.OK)
-            {
-
-                Transaction tr =doc.TransactionManager.StartTransaction();
-                using (tr)
-                {
-                    // Check the entity is an MText object
-                    DBObject obj = tr.GetObject(res.ObjectId,OpenMode.ForRead);                    
-                    MText mt = obj as MText;
-                    if (mt != null)
-                    {
-                        if (!mt.HasFields)
-                        {
-                            ed.WriteMessage("\nMText object does not contain fields.");
-                        }
-                        else
-                        {
-                            // Open the extension dictionary
-                            DBDictionary extDict = (DBDictionary)tr.GetObject( mt.ExtensionDictionary,OpenMode.ForRead );
-                            const string fldDictName = "ACAD_FIELD";
-                            const string fldEntryName = "TEXT";
-                            // Get the field dictionary
-                            if (extDict.Contains(fldDictName))
+                            if (tr.GetObject(bltrEnum.Current, OpenMode.ForRead).GetType().Name == "AttributeDefinition")
                             {
-                                ObjectId fldDictId =extDict.GetAt(fldDictName);
-                                if (fldDictId != ObjectId.Null)
-                                {
-                                    DBDictionary fldDict =(DBDictionary)tr.GetObject(fldDictId, OpenMode.ForRead );
-
-                                    // Get the field itself
-                                    if (fldDict.Contains(fldEntryName))
-                                    {
-                                        ObjectId fldId = fldDict.GetAt(fldEntryName);
-                                        if (fldId != ObjectId.Null)
-                                        {
-                                            obj =tr.GetObject(fldId, OpenMode.ForRead);
-
-                                            Field fld = obj as Field;
-
-                                            if (fld != null)
-                                            {
-                                                // And finally get the string
-
-                                                // including the field codes
-
-                                                string fldCode = fld.GetFieldCode();
-
-                                                ed.WriteMessage("\nField code: "+ fldCode);
-                                                // Loop, using our helper function
-                                                // to find the object references
-                                                do
-                                                { ObjectId objId;
-
-                                                    fldCode =FindObjectId(fldCode,out objId);
-
-                                                    if (fldCode != "")
-
-                                                    {
-                                                        // Print the ObjectId
-
-                                                        ed.WriteMessage("\nFound Object ID: "+ objId.ToString() );
-
-                                                        obj =tr.GetObject(objId,OpenMode.ForRead );
-
-                                                        // ... and the type of the object
-
-                                                        ed.WriteMessage( ", which is an object of type "+ obj.GetType().ToString() );
-                                                    }
-
-                                                } while (fldCode != "");
-
-                                            }
-                                        }
-                                    }
-                                }
+                                AttributeDefinition attDef = tr.GetObject(bltrEnum.Current, OpenMode.ForRead) as AttributeDefinition;
+                                //string st = string.Format("{0}\t{1}\t{2}", attDef.Tag,0,0);
+                                //sb.AppendLine(tr.GetObject(bltrEnum.Current, OpenMode.ForRead).GetType().Name);
+                                DBObject o = (tr.GetObject(attDef.ExtensionDictionary, OpenMode.ForRead));
+                                sb.AppendLine(o.GetType().Name);
                             }
                         }
+
                     }
                 }
+
             }
+            MessageBoxRichTextBox mbrtb = new MessageBoxRichTextBox(sb.ToString());
+            mbrtb.Show();
         }
-
-        // Extract an ObjectId from a field string
-
-        // and return the remainder of the string
-
-        //
-
-        static public string FindObjectId(
-
-          string text,
-
-          out ObjectId objId
-
-        )
-
+        [aar.CommandMethod("a3")]
+        public static void GetUCS()
         {
-
-            const string prefix = "%<\\_ObjId ";
-
-            const string suffix = ">%";
-
-
-            // Find the location of the prefix string
-
-            int preLoc = text.IndexOf(prefix);
-
-            if (preLoc > 0)
-
+            // Get the current document and start the Transaction Manager
+            try
             {
+                aApp.Document aDoc = aApp.Application.DocumentManager.MdiActiveDocument;
+                Database acCurDb = aDoc.Database;
+                using (Transaction tr = acCurDb.TransactionManager.StartTransaction())
+                {
+                    
+                    StringBuilder sb = new StringBuilder();
+                    string st = string.Format("UCS\tUcsname : {0}\tUcsorg : {1}\tUcsxdir : {2}\tUcsydir : {3}", 
+                        acCurDb.Ucsname, acCurDb.Ucsorg, acCurDb.Ucsxdir, acCurDb.Ucsydir);
 
-                // Find the location of the ID itself
+                    sb.AppendLine(st);
+                    string strsb = Regex.Replace(sb.ToString(), @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline);
 
-                int idLoc = preLoc + prefix.Length;
-
-
-                // Get the remaining string
-
-                string remains = text.Substring(idLoc);
-
-
-                // Find the location of the suffix
-
-                int sufLoc = remains.IndexOf(suffix);
-
-
-                // Extract the ID string and get the ObjectId
-
-                string id = remains.Remove(sufLoc);
-
-                objId = new ObjectId();
-                //objId = Convert.ToInt32(id);
-
-
-                // Return the remainder, to allow extraction
-
-                // of any remaining IDs
-
-                return remains.Substring(sufLoc + suffix.Length);
-
+                    MessageBoxRichTextBox mbrtb = new MessageBoxRichTextBox(strsb);
+                    mbrtb.Show();
+                    tr.Commit();
+                }
             }
-
-            else
-
+            catch (Exception e)
             {
-
-                objId = ObjectId.Null;
-
-                return "";
-
+                MessageBox.Show(e.Message);
             }
 
         }
-    
     }
-
 }
