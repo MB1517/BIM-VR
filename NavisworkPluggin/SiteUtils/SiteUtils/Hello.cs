@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
 using System.Collections;
-using System.Collections.Generic;
 using Autodesk.Navisworks.Api;
 using Autodesk.Navisworks.Api.Plugins;
 
