@@ -1,0 +1,313 @@
+{
+  "asset": {
+    "generator": "glTF Exporter addin for Revit",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.707106769,
+        0.0,
+        0.0,
+        -0.707106769
+      ],
+      "scale": [
+        0.3048,
+        0.3048,
+        0.3048
+      ],
+      "children": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "mesh": 0
+    },
+    {
+      "mesh": 1
+    },
+    {
+      "mesh": 2
+    },
+    {
+      "mesh": 3
+    }
+  ],
+  "meshes": [
+    {
+      "name": "TCXD-Concrete-CiP-M300 (B22.5)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M200 (B15)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M250",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7
+          },
+          "indices": 8,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "name": "DEFAULT",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10
+          },
+          "indices": 11,
+          "material": 3
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TCXD-DD-ARC-LANDSCAPE&CIVIL_0.bin",
+      "byteLength": 802560
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 347304,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 347304,
+      "byteLength": 347304,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 694608,
+      "byteLength": 107952,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 23788,
+      "type": "VEC3",
+      "max": [
+        204.051117,
+        295.369659,
+        3.772966
+      ],
+      "min": [
+        -196.087875,
+        -214.759781,
+        -14.5997372
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 23788,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 44232,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 285456,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC3",
+      "max": [
+        202.600052,
+        -194.156631,
+        -12.3031492
+      ],
+      "min": [
+        202.490921,
+        -194.978943,
+        -13.2874012
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 285456,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 88464,
+      "componentType": 5123,
+      "count": 24,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 285648,
+      "componentType": 5126,
+      "count": 4370,
+      "type": "VEC3",
+      "max": [
+        204.050537,
+        212.1229,
+        1.804462
+      ],
+      "min": [
+        -179.6526,
+        -214.685974,
+        -8.366141
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 285648,
+      "componentType": 5126,
+      "count": 4370,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 88512,
+      "componentType": 5123,
+      "count": 7512,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 338088,
+      "componentType": 5126,
+      "count": 768,
+      "type": "VEC3",
+      "max": [
+        -104.260124,
+        -289.378143,
+        2.72856522
+      ],
+      "min": [
+        -252.431671,
+        -375.463562,
+        -27.5590553
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 338088,
+      "componentType": 5126,
+      "count": 768,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 103536,
+      "componentType": 5123,
+      "count": 2208,
+      "type": "SCALAR"
+    }
+  ],
+  "materials": [
+    {
+      "name": "TCXD-Concrete-CiP-M300 (B22.5)",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6946763,
+          0.694660962,
+          0.6950992,
+          1.0
+        ],
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M200 (B15)",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6946763,
+          0.694660962,
+          0.6950992,
+          1.0
+        ],
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M250",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6946763,
+          0.694660962,
+          0.6950992,
+          1.0
+        ],
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "DEFAULT",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.498039216,
+          0.498039216,
+          0.498039216,
+          1.0
+        ],
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    }
+  ]
+}

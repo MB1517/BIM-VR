@@ -1,0 +1,538 @@
+{
+  "asset": {
+    "generator": "glTF Exporter addin for Revit",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.707106769,
+        0.0,
+        0.0,
+        -0.707106769
+      ],
+      "scale": [
+        0.3048,
+        0.3048,
+        0.3048
+      ],
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "mesh": 0
+    },
+    {
+      "mesh": 1
+    },
+    {
+      "mesh": 2
+    },
+    {
+      "mesh": 3
+    },
+    {
+      "mesh": 4
+    },
+    {
+      "mesh": 5
+    },
+    {
+      "mesh": 6
+    }
+  ],
+  "meshes": [
+    {
+      "name": "TCXD-Concrete-CiP-M300 (B22.5)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "DEFAULT",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M150 (B12.5)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7
+          },
+          "indices": 8,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M250",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10
+          },
+          "indices": 11,
+          "material": 3
+        }
+      ]
+    },
+    {
+      "name": "Concrete, Cast-in-Place gray",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 4
+        }
+      ]
+    },
+    {
+      "name": "Wood Flooring",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 16,
+            "NORMAL": 17,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 5
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Name Sign",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 20,
+            "NORMAL": 21
+          },
+          "indices": 22,
+          "material": 6
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TCXD-DD-ARC-LANDSCAPE&CIVIL_0.bin",
+      "byteLength": 3300170
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1359612,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1359612,
+      "byteLength": 1359612,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2719224,
+      "byteLength": 2624,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2721848,
+      "byteLength": 578322,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 45893,
+      "type": "VEC3",
+      "max": [
+        200.745468,
+        294.8751,
+        -1.48097563
+      ],
+      "min": [
+        -194.774887,
+        -214.745422,
+        -15.0524931
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 45893,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 119769,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 550716,
+      "componentType": 5126,
+      "count": 1780,
+      "type": "VEC3",
+      "max": [
+        185.09227,
+        279.4223,
+        6.33749
+      ],
+      "min": [
+        -252.431686,
+        -375.606537,
+        -14.7965879
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 550716,
+      "componentType": 5126,
+      "count": 1780,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 239538,
+      "componentType": 5123,
+      "count": 2892,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 572076,
+      "componentType": 5126,
+      "count": 22873,
+      "type": "VEC3",
+      "max": [
+        200.745468,
+        339.255219,
+        -2.78755665
+      ],
+      "min": [
+        -238.523865,
+        -214.746338,
+        -20.8005257
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 572076,
+      "componentType": 5126,
+      "count": 22873,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 245322,
+      "componentType": 5123,
+      "count": 80889,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 846552,
+      "componentType": 5126,
+      "count": 8899,
+      "type": "VEC3",
+      "max": [
+        185.2399,
+        339.255219,
+        -5.2493434
+      ],
+      "min": [
+        -238.523865,
+        -165.159409,
+        -20.47244
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 846552,
+      "componentType": 5126,
+      "count": 8899,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 407100,
+      "componentType": 5123,
+      "count": 19407,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 953340,
+      "componentType": 5126,
+      "count": 280,
+      "type": "VEC3",
+      "max": [
+        182.2631,
+        278.2193,
+        -12.0078735
+      ],
+      "min": [
+        -178.337875,
+        115.496063,
+        -12.9593172
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 953340,
+      "componentType": 5126,
+      "count": 280,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 280,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 445914,
+      "componentType": 5123,
+      "count": 504,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 956700,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC3",
+      "max": [
+        -120.697632,
+        64.86309,
+        -9.973753
+      ],
+      "min": [
+        -121.911545,
+        63.0914345,
+        -12.0734911
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 956700,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2240,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 446922,
+      "componentType": 5123,
+      "count": 72,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 957276,
+      "componentType": 5126,
+      "count": 33528,
+      "type": "VEC3",
+      "max": [
+        100.662338,
+        -215.033951,
+        1.473603
+      ],
+      "min": [
+        28.9213028,
+        -215.738068,
+        -4.48949575
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 957276,
+      "componentType": 5126,
+      "count": 33528,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 447066,
+      "componentType": 5123,
+      "count": 65628,
+      "type": "SCALAR"
+    }
+  ],
+  "materials": [
+    {
+      "name": "TCXD-Concrete-CiP-M300 (B22.5)",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6946763,
+          0.694660962,
+          0.6950992,
+          1.0
+        ],
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "DEFAULT",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.498039216,
+          0.498039216,
+          0.498039216,
+          1.0
+        ],
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M150 (B12.5)",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6946763,
+          0.694660962,
+          0.6950992,
+          1.0
+        ],
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M250",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6946763,
+          0.694660962,
+          0.6950992,
+          1.0
+        ],
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Concrete, Cast-in-Place gray",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5135325,
+          0.5227773,
+          0.470051825,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Wood Flooring",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Name Sign",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    }
+  ],
+  "images": [
+    {
+      "uri": "Textures/Concrete.Cast-In-Place.Flat.Grey.1.jpg"
+    },
+    {
+      "uri": "Textures/beechwood_galliano.png"
+    }
+  ]
+}

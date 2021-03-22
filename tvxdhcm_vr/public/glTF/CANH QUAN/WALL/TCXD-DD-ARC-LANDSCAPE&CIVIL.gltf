@@ -1,0 +1,281 @@
+{
+  "asset": {
+    "generator": "glTF Exporter addin for Revit",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.707106769,
+        0.0,
+        0.0,
+        -0.707106769
+      ],
+      "scale": [
+        0.3048,
+        0.3048,
+        0.3048
+      ],
+      "children": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mesh": 0
+    },
+    {
+      "mesh": 1
+    },
+    {
+      "mesh": 2
+    }
+  ],
+  "meshes": [
+    {
+      "name": "TCXD-Wall Paint-Exterior-White",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Granite Black",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5
+          },
+          "indices": 6,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Brick",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 7,
+            "NORMAL": 8
+          },
+          "indices": 9,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TCXD-DD-ARC-LANDSCAPE&CIVIL_0.bin",
+      "byteLength": 280542
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 113100,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 113100,
+      "byteLength": 113100,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 226200,
+      "byteLength": 25728,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 251928,
+      "byteLength": 28614,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 3216,
+      "type": "VEC3",
+      "max": [
+        204.097656,
+        211.468842,
+        3.77268434
+      ],
+      "min": [
+        -179.6526,
+        -217.51236,
+        -6.725722
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 3216,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 3216,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 4866,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 38592,
+      "componentType": 5126,
+      "count": 180,
+      "type": "VEC3",
+      "max": [
+        110.696259,
+        -214.674438,
+        3.772966
+      ],
+      "min": [
+        -18.8914471,
+        -215.66011,
+        -6.725722
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 38592,
+      "componentType": 5126,
+      "count": 180,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 9732,
+      "componentType": 5123,
+      "count": 324,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 40752,
+      "componentType": 5126,
+      "count": 6029,
+      "type": "VEC3",
+      "max": [
+        204.024033,
+        295.2652,
+        1.804462
+      ],
+      "min": [
+        -196.087463,
+        -217.51236,
+        -12.9593172
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 40752,
+      "componentType": 5126,
+      "count": 6029,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 10380,
+      "componentType": 5123,
+      "count": 9117,
+      "type": "SCALAR"
+    }
+  ],
+  "materials": [
+    {
+      "name": "TCXD-Wall Paint-Exterior-White",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.90196085,
+          0.913725555,
+          0.92549026,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 0,
+        "scale": 0.0300000012
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Granite Black",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.630936861,
+          0.6534123,
+          0.699636459,
+          1.0
+        ],
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Brick",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "uri": "Textures/Finishes.Painting.Paint.Bump.jpg"
+    }
+  ]
+}

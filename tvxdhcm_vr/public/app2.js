@@ -96,6 +96,7 @@ class App{
         const button = new VRButton( this.renderer )
         document.body.appendChild( VRButton.createButton( this.renderer ) );
         const self = this;        
+        
         function onSelectStart() {            
             this.userData.selectPressed = true;
         }
@@ -106,6 +107,8 @@ class App{
         this.controller = this.renderer.xr.getController( 0 );
         this.controller.addEventListener( 'selectstart', onSelectStart );
         this.controller.addEventListener( 'selectend', onSelectEnd );
+        this.controller.addEventListener( 'touchstart', onSelectStart );
+        this.controller.addEventListener( 'touchend', onSelectEnd );
         this.controller.addEventListener( 'connected', function ( event ) {
 
             const mesh = self.buildController.call(self, event.data );

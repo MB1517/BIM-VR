@@ -1,0 +1,484 @@
+{
+  "asset": {
+    "generator": "glTF Exporter addin for Revit",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.707106769,
+        0.0,
+        0.0,
+        -0.707106769
+      ],
+      "scale": [
+        0.3048,
+        0.3048,
+        0.3048
+      ],
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "mesh": 0
+    },
+    {
+      "mesh": 1
+    },
+    {
+      "mesh": 2
+    },
+    {
+      "mesh": 3
+    },
+    {
+      "mesh": 4
+    },
+    {
+      "mesh": 5
+    }
+  ],
+  "meshes": [
+    {
+      "name": "TCXD-Wall Paint-Dark",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Wall Paint-Exterior-White",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Wall Paint-Interior-White",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "name": "DEFAULT",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13
+          },
+          "indices": 14,
+          "material": 3
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Wall Paint-Interior-White",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 15,
+            "NORMAL": 16,
+            "TEXCOORD_0": 17
+          },
+          "indices": 18,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Wall Paint-Interior-White",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 19,
+            "NORMAL": 20,
+            "TEXCOORD_0": 21
+          },
+          "indices": 22,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TCXD-DD-ARC-KHOI NHA CHINH-MAIN MODEL_0.bin",
+      "byteLength": 5035024
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1730832,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1730832,
+      "byteLength": 1730832,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3461664,
+      "byteLength": 1127104,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4588768,
+      "byteLength": 446256,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 4086,
+      "type": "VEC3",
+      "max": [
+        160.3082,
+        94.71279,
+        83.49739
+      ],
+      "min": [
+        -124.950958,
+        -127.662361,
+        -5.90551329
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 4086,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 4086,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 6228,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 49032,
+      "componentType": 5126,
+      "count": 4158,
+      "type": "VEC3",
+      "max": [
+        159.6537,
+        94.6067352,
+        83.4800949
+      ],
+      "min": [
+        -123.5484,
+        -136.167938,
+        -5.911594
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 49032,
+      "componentType": 5126,
+      "count": 4158,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 32688,
+      "componentType": 5126,
+      "count": 4158,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 12456,
+      "componentType": 5123,
+      "count": 6288,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 98928,
+      "componentType": 5126,
+      "count": 65530,
+      "type": "VEC3",
+      "max": [
+        160.3082,
+        94.60634,
+        93.60236
+      ],
+      "min": [
+        -124.926353,
+        -136.102325,
+        4.62598276
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 98928,
+      "componentType": 5126,
+      "count": 65530,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 65952,
+      "componentType": 5126,
+      "count": 65530,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 25032,
+      "componentType": 5123,
+      "count": 100416,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 885288,
+      "componentType": 5126,
+      "count": 3348,
+      "type": "VEC3",
+      "max": [
+        160.242584,
+        94.60679,
+        86.50271
+      ],
+      "min": [
+        -124.860733,
+        -124.619385,
+        -6.56168
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 885288,
+      "componentType": 5126,
+      "count": 3348,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 225864,
+      "componentType": 5123,
+      "count": 5388,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 925464,
+      "componentType": 5126,
+      "count": 65530,
+      "type": "VEC3",
+      "max": [
+        159.5967,
+        94.60661,
+        86.49902
+      ],
+      "min": [
+        -124.926353,
+        -127.572136,
+        -5.93444157
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 925464,
+      "componentType": 5126,
+      "count": 65530,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 590192,
+      "componentType": 5126,
+      "count": 65530,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 236640,
+      "componentType": 5123,
+      "count": 102234,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1711824,
+      "componentType": 5126,
+      "count": 1584,
+      "type": "VEC3",
+      "max": [
+        152.370239,
+        94.54072,
+        83.5659256
+      ],
+      "min": [
+        -124.204559,
+        -127.572136,
+        13.2874012
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1711824,
+      "componentType": 5126,
+      "count": 1584,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1114432,
+      "componentType": 5126,
+      "count": 1584,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 441108,
+      "componentType": 5123,
+      "count": 2574,
+      "type": "SCALAR"
+    }
+  ],
+  "materials": [
+    {
+      "name": "TCXD-Wall Paint-Dark",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.164705887,
+          0.164705887,
+          0.164705887,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 0,
+        "scale": 0.005
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Wall Paint-Exterior-White",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.90196085,
+          0.913725555,
+          0.92549026,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 1,
+        "scale": 0.0300000012
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Wall Paint-Interior-White",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.90196085,
+          0.913725555,
+          0.92549026,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 1,
+        "scale": 0.0300000012
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "DEFAULT",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.498039216,
+          0.498039216,
+          0.498039216,
+          1.0
+        ],
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    }
+  ],
+  "images": [
+    {
+      "uri": "Textures/Finishes.Painting.Paint.Flaking.Bump.jpg"
+    },
+    {
+      "uri": "Textures/Finishes.Painting.Paint.Bump.jpg"
+    }
+  ]
+}

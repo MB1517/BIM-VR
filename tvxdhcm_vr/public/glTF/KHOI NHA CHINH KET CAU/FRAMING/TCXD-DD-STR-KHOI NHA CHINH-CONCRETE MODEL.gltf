@@ -1,0 +1,347 @@
+{
+  "asset": {
+    "generator": "glTF Exporter addin for Revit",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.707106769,
+        0.0,
+        0.0,
+        -0.707106769
+      ],
+      "scale": [
+        0.3048,
+        0.3048,
+        0.3048
+      ],
+      "children": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "mesh": 0
+    },
+    {
+      "mesh": 1
+    },
+    {
+      "mesh": 2
+    },
+    {
+      "mesh": 3
+    }
+  ],
+  "meshes": [
+    {
+      "name": "TCXD-Concrete-CiP-M300 (B22.5)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M150 (B12.5)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M300 (B22.5)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Steel-CT38",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13
+          },
+          "indices": 14,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TCXD-DD-STR-KHOI NHA CHINH-CONCRETE MODEL_0.bin",
+      "byteLength": 3743138
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1270296,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1270296,
+      "byteLength": 1270296,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2540592,
+      "byteLength": 818096,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3358688,
+      "byteLength": 384450,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 65533,
+      "type": "VEC3",
+      "max": [
+        160.244247,
+        94.5412445,
+        83.4973755
+      ],
+      "min": [
+        -124.860741,
+        -136.102325,
+        -3.116798
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 65533,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 65533,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 121131,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 786396,
+      "componentType": 5126,
+      "count": 870,
+      "type": "VEC3",
+      "max": [
+        158.931915,
+        89.61946,
+        -0.7217848
+      ],
+      "min": [
+        -124.860733,
+        -157.741852,
+        -9.186352
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 786396,
+      "componentType": 5126,
+      "count": 870,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 524264,
+      "componentType": 5126,
+      "count": 870,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 242262,
+      "componentType": 5123,
+      "count": 1503,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 796836,
+      "componentType": 5126,
+      "count": 35859,
+      "type": "VEC3",
+      "max": [
+        160.242584,
+        94.5409546,
+        93.99606
+      ],
+      "min": [
+        -124.860748,
+        -174.398529,
+        -9.514436
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 796836,
+      "componentType": 5126,
+      "count": 35859,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 531224,
+      "componentType": 5126,
+      "count": 35859,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 245268,
+      "componentType": 5123,
+      "count": 63639,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1227144,
+      "componentType": 5126,
+      "count": 3596,
+      "type": "VEC3",
+      "max": [
+        153.02739,
+        89.29685,
+        70.09592
+      ],
+      "min": [
+        88.10736,
+        -8.68499851,
+        56.94846
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1227144,
+      "componentType": 5126,
+      "count": 3596,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 372546,
+      "componentType": 5123,
+      "count": 5952,
+      "type": "SCALAR"
+    }
+  ],
+  "materials": [
+    {
+      "name": "TCXD-Concrete-CiP-M300 (B22.5)",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6946763,
+          0.694660962,
+          0.6950992,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M150 (B12.5)",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6946763,
+          0.694660962,
+          0.6950992,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Steel-CT38",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8784314,
+          0.8745098,
+          0.858823538,
+          1.0
+        ],
+        "metallicFactor": 0.2,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "uri": "Textures/Concrete.Cast-In-Place.Flat.Polished.Grey.jpg"
+    }
+  ]
+}

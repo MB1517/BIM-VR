@@ -1,0 +1,1013 @@
+{
+  "asset": {
+    "generator": "glTF Exporter addin for Revit",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.707106769,
+        0.0,
+        0.0,
+        -0.707106769
+      ],
+      "scale": [
+        0.3048,
+        0.3048,
+        0.3048
+      ],
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "mesh": 0
+    },
+    {
+      "mesh": 1
+    },
+    {
+      "mesh": 2
+    },
+    {
+      "mesh": 3
+    },
+    {
+      "mesh": 4
+    },
+    {
+      "mesh": 5
+    },
+    {
+      "mesh": 6
+    },
+    {
+      "mesh": 7
+    },
+    {
+      "mesh": 8
+    },
+    {
+      "mesh": 9
+    },
+    {
+      "mesh": 10
+    },
+    {
+      "mesh": 11
+    },
+    {
+      "mesh": 12
+    },
+    {
+      "mesh": 13
+    }
+  ],
+  "meshes": [
+    {
+      "name": "TCXD-Plaster-Interior",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Ceramic-300x300mm",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Finish-Epoxy",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7
+          },
+          "indices": 8,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Ceramic-600x600mm",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10
+          },
+          "indices": 11,
+          "material": 3
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Finish-Cement-(tạo nhám)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13
+          },
+          "indices": 14,
+          "material": 4
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Granite Black",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 15,
+            "NORMAL": 16
+          },
+          "indices": 17,
+          "material": 5
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Ceramic-600X600-(sẫm màu)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 18,
+            "NORMAL": 19
+          },
+          "indices": 20,
+          "material": 6
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Finish-Be tong da mi",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 21,
+            "NORMAL": 22
+          },
+          "indices": 23,
+          "material": 7
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Graniteto",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 24,
+            "NORMAL": 25,
+            "TEXCOORD_0": 26
+          },
+          "indices": 27,
+          "material": 8
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Brick",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 28,
+            "NORMAL": 29,
+            "TEXCOORD_0": 30
+          },
+          "indices": 31,
+          "material": 9
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Finish-XOA NHAN MAT",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 32,
+            "NORMAL": 33
+          },
+          "indices": 34,
+          "material": 10
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Finish-LOP DEM THANG MAY",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 35,
+            "NORMAL": 36
+          },
+          "indices": 37,
+          "material": 11
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Wall Paint-Exterior-White",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 38,
+            "NORMAL": 39,
+            "TEXCOORD_0": 40
+          },
+          "indices": 41,
+          "material": 12
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Wall Paint-Interior-White",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 42,
+            "NORMAL": 43,
+            "TEXCOORD_0": 44
+          },
+          "indices": 45,
+          "material": 13
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TCXD-DD-ARC-KHOI NHA CHINH-MAIN MODEL_0.bin",
+      "byteLength": 1083840
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 456636,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 456636,
+      "byteLength": 456636,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 913272,
+      "byteLength": 25464,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 938736,
+      "byteLength": 145104,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 22116,
+      "type": "VEC3",
+      "max": [
+        158.702255,
+        93.81913,
+        83.82546
+      ],
+      "min": [
+        -124.926353,
+        -135.741623,
+        -5.67585325
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 22116,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 38010,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 265392,
+      "componentType": 5126,
+      "count": 801,
+      "type": "VEC3",
+      "max": [
+        153.288879,
+        93.81913,
+        69.78346
+      ],
+      "min": [
+        -124.138947,
+        -123.733559,
+        -5.51181126
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 265392,
+      "componentType": 5126,
+      "count": 801,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 76020,
+      "componentType": 5123,
+      "count": 2217,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 275004,
+      "componentType": 5126,
+      "count": 7523,
+      "type": "VEC3",
+      "max": [
+        158.702255,
+        93.81913,
+        83.6614151
+      ],
+      "min": [
+        -123.54847,
+        -124.619385,
+        -1.476378
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 275004,
+      "componentType": 5126,
+      "count": 7523,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 80454,
+      "componentType": 5123,
+      "count": 17352,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 365280,
+      "componentType": 5126,
+      "count": 335,
+      "type": "VEC3",
+      "max": [
+        153.354492,
+        12.1254921,
+        0.0656168
+      ],
+      "min": [
+        -124.926353,
+        -135.741623,
+        -5.413386
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 365280,
+      "componentType": 5126,
+      "count": 335,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 115158,
+      "componentType": 5123,
+      "count": 981,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 369300,
+      "componentType": 5126,
+      "count": 1346,
+      "type": "VEC3",
+      "max": [
+        153.288879,
+        89.29029,
+        94.1601
+      ],
+      "min": [
+        -124.467033,
+        -135.446152,
+        -5.085302
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 369300,
+      "componentType": 5126,
+      "count": 1346,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 117120,
+      "componentType": 5123,
+      "count": 2628,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 385452,
+      "componentType": 5126,
+      "count": 113,
+      "type": "VEC3",
+      "max": [
+        153.288879,
+        90.93231,
+        72.4081345
+      ],
+      "min": [
+        -124.204491,
+        -118.648254,
+        -2.887139
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 385452,
+      "componentType": 5126,
+      "count": 113,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 122376,
+      "componentType": 5123,
+      "count": 189,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 386808,
+      "componentType": 5126,
+      "count": 548,
+      "type": "VEC3",
+      "max": [
+        153.7482,
+        93.55646,
+        83.82546
+      ],
+      "min": [
+        -120.595665,
+        -113.612923,
+        -5.413386
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 386808,
+      "componentType": 5126,
+      "count": 548,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 122754,
+      "componentType": 5123,
+      "count": 822,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 393384,
+      "componentType": 5126,
+      "count": 1190,
+      "type": "VEC3",
+      "max": [
+        88.06577,
+        -11.4304075,
+        69.88189
+      ],
+      "min": [
+        -123.54847,
+        -123.602325,
+        69.5374
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 393384,
+      "componentType": 5126,
+      "count": 1190,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 124398,
+      "componentType": 5123,
+      "count": 2232,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 407664,
+      "componentType": 5126,
+      "count": 104,
+      "type": "VEC3",
+      "max": [
+        134.588074,
+        70.00112,
+        69.88189
+      ],
+      "min": [
+        -115.674377,
+        -138.398911,
+        -5.413386
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 407664,
+      "componentType": 5126,
+      "count": 104,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 104,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 128862,
+      "componentType": 5123,
+      "count": 156,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 408912,
+      "componentType": 5126,
+      "count": 2911,
+      "type": "VEC3",
+      "max": [
+        153.026413,
+        46.65414,
+        42.7165337
+      ],
+      "min": [
+        -45.7925034,
+        -45.49357,
+        14.5997372
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 408912,
+      "componentType": 5126,
+      "count": 2911,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 832,
+      "componentType": 5126,
+      "count": 2911,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 129174,
+      "componentType": 5123,
+      "count": 6135,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 443844,
+      "componentType": 5126,
+      "count": 858,
+      "type": "VEC3",
+      "max": [
+        125.959496,
+        51.57758,
+        41.896328
+      ],
+      "min": [
+        95.02115,
+        -5.83929825,
+        28.0511818
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 443844,
+      "componentType": 5126,
+      "count": 858,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 141444,
+      "componentType": 5123,
+      "count": 1470,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 454140,
+      "componentType": 5126,
+      "count": 40,
+      "type": "VEC3",
+      "max": [
+        121.530342,
+        -63.2676773,
+        -4.92126
+      ],
+      "min": [
+        114.312492,
+        -79.671875,
+        -5.905512
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 454140,
+      "componentType": 5126,
+      "count": 40,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 144384,
+      "componentType": 5123,
+      "count": 60,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 454620,
+      "componentType": 5126,
+      "count": 108,
+      "type": "VEC3",
+      "max": [
+        89.11565,
+        -125.505211,
+        1.54199481
+      ],
+      "min": [
+        47.64583,
+        -138.398911,
+        0.25158456
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 454620,
+      "componentType": 5126,
+      "count": 108,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 24120,
+      "componentType": 5126,
+      "count": 108,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 144504,
+      "componentType": 5123,
+      "count": 204,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 455916,
+      "componentType": 5126,
+      "count": 60,
+      "type": "VEC3",
+      "max": [
+        -95.98938,
+        -89.84248,
+        83.4973755
+      ],
+      "min": [
+        -96.02219,
+        -126.900063,
+        81.52887
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 455916,
+      "componentType": 5126,
+      "count": 60,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 24984,
+      "componentType": 5126,
+      "count": 60,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 144912,
+      "componentType": 5123,
+      "count": 96,
+      "type": "SCALAR"
+    }
+  ],
+  "materials": [
+    {
+      "name": "TCXD-Plaster-Interior",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.63,
+          0.63,
+          0.63,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.25
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Ceramic-300x300mm",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          0.875,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.25
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Finish-Epoxy",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Ceramic-600x600mm",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          0.875,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.25
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Finish-Cement-(tạo nhám)",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Granite Black",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.630936861,
+          0.6534123,
+          0.699636459,
+          1.0
+        ],
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Ceramic-600X600-(sẫm màu)",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.211764708,
+          0.211764708,
+          0.211764708,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.25
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Finish-Be tong da mi",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Graniteto",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.630936861,
+          0.6534123,
+          0.699636459,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Brick",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 2,
+        "scale": 0.0015
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Finish-XOA NHAN MAT",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Finish-LOP DEM THANG MAY",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Wall Paint-Exterior-White",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.90196085,
+          0.913725555,
+          0.92549026,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 3,
+        "scale": 0.0300000012
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Wall Paint-Interior-White",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.90196085,
+          0.913725555,
+          0.92549026,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 3,
+        "scale": 0.0300000012
+      },
+      "doubleSided": true
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    },
+    {
+      "source": 2
+    },
+    {
+      "source": 3
+    }
+  ],
+  "images": [
+    {
+      "uri": "Textures/Finishes.Flooring.Marble.White.jpg"
+    },
+    {
+      "uri": "Textures/Brick_Non_Uniform_Running_Burgundy.png"
+    },
+    {
+      "uri": "Textures/Brick_Non_Uniform_Running_bump.png"
+    },
+    {
+      "uri": "Textures/Finishes.Painting.Paint.Bump.jpg"
+    }
+  ]
+}

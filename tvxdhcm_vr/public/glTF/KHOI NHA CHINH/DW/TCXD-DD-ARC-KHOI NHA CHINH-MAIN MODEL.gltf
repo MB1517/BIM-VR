@@ -1,0 +1,647 @@
+{
+  "asset": {
+    "generator": "glTF Exporter addin for Revit",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.707106769,
+        0.0,
+        0.0,
+        -0.707106769
+      ],
+      "scale": [
+        0.3048,
+        0.3048,
+        0.3048
+      ],
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "mesh": 0
+    },
+    {
+      "mesh": 1
+    },
+    {
+      "mesh": 2
+    },
+    {
+      "mesh": 3
+    },
+    {
+      "mesh": 4
+    },
+    {
+      "mesh": 5
+    },
+    {
+      "mesh": 6
+    },
+    {
+      "mesh": 7
+    },
+    {
+      "mesh": 8
+    }
+  ],
+  "meshes": [
+    {
+      "name": "TCXD-Glass-(Kính trong)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Plastic-White( Nhựa)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Glass-Frosted-( Kính Mờ)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7
+          },
+          "indices": 8,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Wood Frame",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10
+          },
+          "indices": 11,
+          "material": 3
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Wood Panel",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 4
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Plastic-White( Nhựa)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 16,
+            "NORMAL": 17
+          },
+          "indices": 18,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "DEFAULT",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 19,
+            "NORMAL": 20
+          },
+          "indices": 21,
+          "material": 5
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Metal-Alumium",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 22,
+            "NORMAL": 23
+          },
+          "indices": 24,
+          "material": 6
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Graniteto",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 25,
+            "NORMAL": 26,
+            "TEXCOORD_0": 27
+          },
+          "indices": 28,
+          "material": 7
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TCXD-DD-ARC-KHOI NHA CHINH-MAIN MODEL_0.bin",
+      "byteLength": 4604736
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1995120,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1995120,
+      "byteLength": 1995120,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3990240,
+      "byteLength": 3840,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3994080,
+      "byteLength": 610656,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 47640,
+      "type": "VEC3",
+      "max": [
+        153.702271,
+        86.04334,
+        92.25394
+      ],
+      "min": [
+        -121.267761,
+        -125.188614,
+        0.4593176
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 47640,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 71460,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 571680,
+      "componentType": 5126,
+      "count": 65532,
+      "type": "VEC3",
+      "max": [
+        153.781,
+        93.55646,
+        64.96063
+      ],
+      "min": [
+        -119.67701,
+        -122.635231,
+        -5.51181126
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 571680,
+      "componentType": 5126,
+      "count": 65532,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 142920,
+      "componentType": 5123,
+      "count": 130320,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1358064,
+      "componentType": 5126,
+      "count": 5304,
+      "type": "VEC3",
+      "max": [
+        153.702271,
+        93.12995,
+        90.43635
+      ],
+      "min": [
+        -120.513542,
+        -119.074768,
+        -5.29855633
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1358064,
+      "componentType": 5126,
+      "count": 5304,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 403560,
+      "componentType": 5123,
+      "count": 7956,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1421712,
+      "componentType": 5126,
+      "count": 816,
+      "type": "VEC3",
+      "max": [
+        153.551346,
+        53.20213,
+        49.5406837
+      ],
+      "min": [
+        94.4306,
+        -18.0248966,
+        28.5433064
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1421712,
+      "componentType": 5126,
+      "count": 816,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 419472,
+      "componentType": 5123,
+      "count": 1572,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1431504,
+      "componentType": 5126,
+      "count": 288,
+      "type": "VEC3",
+      "max": [
+        153.502136,
+        52.9724731,
+        49.3110237
+      ],
+      "min": [
+        94.47981,
+        -18.0084915,
+        28.6417332
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1431504,
+      "componentType": 5126,
+      "count": 288,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 288,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 422616,
+      "componentType": 5123,
+      "count": 432,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1434960,
+      "componentType": 5126,
+      "count": 45312,
+      "type": "VEC3",
+      "max": [
+        153.7564,
+        86.33862,
+        92.5196838
+      ],
+      "min": [
+        -121.513824,
+        -125.341179,
+        -5.74147
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1434960,
+      "componentType": 5126,
+      "count": 45312,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 423480,
+      "componentType": 5123,
+      "count": 91296,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1978704,
+      "componentType": 5126,
+      "count": 1080,
+      "type": "VEC3",
+      "max": [
+        133.177322,
+        -9.319176,
+        49.5406837
+      ],
+      "min": [
+        -108.795189,
+        -122.650879,
+        4.396232
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1978704,
+      "componentType": 5126,
+      "count": 1080,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 606072,
+      "componentType": 5123,
+      "count": 1812,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1991664,
+      "componentType": 5126,
+      "count": 96,
+      "type": "VEC3",
+      "max": [
+        121.464722,
+        -65.215416,
+        6.97309732
+      ],
+      "min": [
+        121.298058,
+        -77.748436,
+        9.129315E-12
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1991664,
+      "componentType": 5126,
+      "count": 96,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 609696,
+      "componentType": 5123,
+      "count": 144,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1992816,
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC3",
+      "max": [
+        122.317741,
+        -64.908165,
+        7.217848
+      ],
+      "min": [
+        121.464722,
+        -78.05569,
+        9.129093E-12
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1992816,
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2304,
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 609984,
+      "componentType": 5123,
+      "count": 336,
+      "type": "SCALAR"
+    }
+  ],
+  "materials": [
+    {
+      "name": "TCXD-Glass-(Kính trong)",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.443137258,
+          0.8156863,
+          1.0,
+          0.25
+        ],
+        "metallicFactor": 0.15
+      },
+      "alphaMode": "BLEND",
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Plastic-White( Nhựa)",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Glass-Frosted-( Kính Mờ)",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9,
+          0.9,
+          0.9,
+          0.25
+        ],
+        "metallicFactor": 0.05,
+        "roughnessFactor": 0.6
+      },
+      "alphaMode": "BLEND",
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Wood Frame",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.831372559,
+          0.7019608,
+          0.443137258,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Wood Panel",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "DEFAULT",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.498039216,
+          0.498039216,
+          0.498039216,
+          1.0
+        ],
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Metal-Alumium",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.996,
+          0.997,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 0.2,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Graniteto",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.630936861,
+          0.6534123,
+          0.699636459,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    }
+  ],
+  "images": [
+    {
+      "uri": "Textures/Woods & Plastics.Finish Carpentry.Wood.Pine.png"
+    },
+    {
+      "uri": "Textures/Finishes.Flooring.Marble.White.jpg"
+    }
+  ]
+}

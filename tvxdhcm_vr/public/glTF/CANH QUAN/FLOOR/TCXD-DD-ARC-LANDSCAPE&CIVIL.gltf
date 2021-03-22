@@ -1,0 +1,1283 @@
+{
+  "asset": {
+    "generator": "glTF Exporter addin for Revit",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.707106769,
+        0.0,
+        0.0,
+        -0.707106769
+      ],
+      "scale": [
+        0.3048,
+        0.3048,
+        0.3048
+      ],
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "mesh": 0
+    },
+    {
+      "mesh": 1
+    },
+    {
+      "mesh": 2
+    },
+    {
+      "mesh": 3
+    },
+    {
+      "mesh": 4
+    },
+    {
+      "mesh": 5
+    },
+    {
+      "mesh": 6
+    },
+    {
+      "mesh": 7
+    },
+    {
+      "mesh": 8
+    },
+    {
+      "mesh": 9
+    },
+    {
+      "mesh": 10
+    },
+    {
+      "mesh": 11
+    },
+    {
+      "mesh": 12
+    },
+    {
+      "mesh": 13
+    },
+    {
+      "mesh": 14
+    },
+    {
+      "mesh": 15
+    },
+    {
+      "mesh": 16
+    },
+    {
+      "mesh": 17
+    }
+  ],
+  "meshes": [
+    {
+      "name": "TCXD-Earth",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Grass-Medium",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Blank Area",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7
+          },
+          "indices": 8,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "name": "Earth",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10,
+            "TEXCOORD_0": 11
+          },
+          "indices": 12,
+          "material": 3
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Brick-Fish Scale",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 13,
+            "NORMAL": 14,
+            "TEXCOORD_0": 15
+          },
+          "indices": 16,
+          "material": 4
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Grass-Football Yard",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 17,
+            "NORMAL": 18
+          },
+          "indices": 19,
+          "material": 5
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Grass-Tennis Court",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 20,
+            "NORMAL": 21
+          },
+          "indices": 22,
+          "material": 6
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Finish-Concrete Pavement",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 23,
+            "NORMAL": 24
+          },
+          "indices": 25,
+          "material": 7
+        }
+      ]
+    },
+    {
+      "name": "Poche",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 26,
+            "NORMAL": 27
+          },
+          "indices": 28,
+          "material": 8
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Water-River",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 29,
+            "NORMAL": 30
+          },
+          "indices": 31,
+          "material": 9
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Brick",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 32,
+            "NORMAL": 33
+          },
+          "indices": 34,
+          "material": 10
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Sidewalk",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 35,
+            "NORMAL": 36
+          },
+          "indices": 37,
+          "material": 11
+        }
+      ]
+    },
+    {
+      "name": "01. CAT BOI CAO DO",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 38,
+            "NORMAL": 39
+          },
+          "indices": 40,
+          "material": 12
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Road-External",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 41,
+            "NORMAL": 42
+          },
+          "indices": 43,
+          "material": 13
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Road-Internal",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 44,
+            "NORMAL": 45
+          },
+          "indices": 46,
+          "material": 14
+        }
+      ]
+    },
+    {
+      "name": "01.VKD",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 47,
+            "NORMAL": 48,
+            "TEXCOORD_0": 49
+          },
+          "indices": 50,
+          "material": 15
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M250",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 51,
+            "NORMAL": 52
+          },
+          "indices": 53,
+          "material": 16
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Paint-White",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 54,
+            "NORMAL": 55,
+            "TEXCOORD_0": 56
+          },
+          "indices": 57,
+          "material": 17
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TCXD-DD-ARC-LANDSCAPE&CIVIL_0.bin",
+      "byteLength": 698766
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 263580,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 263580,
+      "byteLength": 263580,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 527160,
+      "byteLength": 41856,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 569016,
+      "byteLength": 129750,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 10333,
+      "type": "VEC3",
+      "max": [
+        518.7809,
+        597.32135,
+        -2.46063
+      ],
+      "min": [
+        -463.853119,
+        -600.553955,
+        -55.8398933
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 10333,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 36069,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 123996,
+      "componentType": 5126,
+      "count": 265,
+      "type": "VEC3",
+      "max": [
+        202.784775,
+        278.765137,
+        -5.212587
+      ],
+      "min": [
+        -463.853119,
+        -505.276,
+        -6.397638
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 123996,
+      "componentType": 5126,
+      "count": 265,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 72138,
+      "componentType": 5123,
+      "count": 723,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 127176,
+      "componentType": 5126,
+      "count": 454,
+      "type": "VEC3",
+      "max": [
+        518.7809,
+        597.32135,
+        -5.905512
+      ],
+      "min": [
+        -463.853119,
+        -565.20105,
+        -6.56168
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 127176,
+      "componentType": 5126,
+      "count": 454,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 73584,
+      "componentType": 5123,
+      "count": 1314,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 132624,
+      "componentType": 5126,
+      "count": 125,
+      "type": "VEC3",
+      "max": [
+        159.387375,
+        169.176163,
+        -5.905512
+      ],
+      "min": [
+        93.61044,
+        89.61946,
+        -6.980846
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 132624,
+      "componentType": 5126,
+      "count": 125,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 125,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 76212,
+      "componentType": 5123,
+      "count": 219,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 134124,
+      "componentType": 5126,
+      "count": 55,
+      "type": "VEC3",
+      "max": [
+        159.387375,
+        169.176163,
+        -5.905512
+      ],
+      "min": [
+        -165.344513,
+        -188.75882,
+        -5.996593
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 134124,
+      "componentType": 5126,
+      "count": 55,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1000,
+      "componentType": 5126,
+      "count": 55,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 76650,
+      "componentType": 5123,
+      "count": 153,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 134784,
+      "componentType": 5126,
+      "count": 42,
+      "type": "VEC3",
+      "max": [
+        139.380768,
+        220.8466,
+        -5.249344
+      ],
+      "min": [
+        -113.665482,
+        72.82068,
+        -5.905512
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 134784,
+      "componentType": 5126,
+      "count": 42,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 76956,
+      "componentType": 5123,
+      "count": 96,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 135288,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC3",
+      "max": [
+        -81.47345,
+        229.78067,
+        -5.905512
+      ],
+      "min": [
+        -136.502228,
+        158.789719,
+        -5.905512
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 135288,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 77148,
+      "componentType": 5123,
+      "count": 12,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 135384,
+      "componentType": 5126,
+      "count": 116,
+      "type": "VEC3",
+      "max": [
+        200.544113,
+        264.965027,
+        -2.46063
+      ],
+      "min": [
+        -124.83149,
+        -124.947472,
+        -6.889764
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 135384,
+      "componentType": 5126,
+      "count": 116,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 77172,
+      "componentType": 5123,
+      "count": 306,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 136776,
+      "componentType": 5126,
+      "count": 160,
+      "type": "VEC3",
+      "max": [
+        518.7809,
+        597.32135,
+        -5.905512
+      ],
+      "min": [
+        -463.853119,
+        -600.553955,
+        -55.8398933
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 136776,
+      "componentType": 5126,
+      "count": 160,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 77784,
+      "componentType": 5123,
+      "count": 240,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 138696,
+      "componentType": 5126,
+      "count": 436,
+      "type": "VEC3",
+      "max": [
+        518.7809,
+        515.488159,
+        -6.233596
+      ],
+      "min": [
+        -463.853119,
+        -600.553955,
+        -6.233596
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 138696,
+      "componentType": 5126,
+      "count": 436,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 78264,
+      "componentType": 5123,
+      "count": 1290,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 143928,
+      "componentType": 5126,
+      "count": 63,
+      "type": "VEC3",
+      "max": [
+        58.1664772,
+        265.1587,
+        -5.905512
+      ],
+      "min": [
+        -165.569534,
+        20.7182388,
+        -5.905512
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 143928,
+      "componentType": 5126,
+      "count": 63,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 80844,
+      "componentType": 5123,
+      "count": 201,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 144684,
+      "componentType": 5126,
+      "count": 45,
+      "type": "VEC3",
+      "max": [
+        518.7809,
+        -271.33667,
+        -6.233596
+      ],
+      "min": [
+        -463.853119,
+        -600.553955,
+        -6.233596
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 144684,
+      "componentType": 5126,
+      "count": 45,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 81246,
+      "componentType": 5123,
+      "count": 93,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 145224,
+      "componentType": 5126,
+      "count": 3428,
+      "type": "VEC3",
+      "max": [
+        518.7809,
+        293.365875,
+        6.69947529
+      ],
+      "min": [
+        -463.853119,
+        -570.765869,
+        -55.7742767
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 145224,
+      "componentType": 5126,
+      "count": 3428,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 81432,
+      "componentType": 5123,
+      "count": 7545,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 186360,
+      "componentType": 5126,
+      "count": 142,
+      "type": "VEC3",
+      "max": [
+        518.7809,
+        -210.609787,
+        6.69947529
+      ],
+      "min": [
+        -463.853119,
+        -570.765869,
+        -6.233596
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 186360,
+      "componentType": 5126,
+      "count": 142,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 96522,
+      "componentType": 5123,
+      "count": 300,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 188064,
+      "componentType": 5126,
+      "count": 1189,
+      "type": "VEC3",
+      "max": [
+        191.6627,
+        293.365875,
+        -3.937008
+      ],
+      "min": [
+        -193.2657,
+        -214.743134,
+        -6.725722
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 188064,
+      "componentType": 5126,
+      "count": 1189,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 97122,
+      "componentType": 5123,
+      "count": 2802,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 202332,
+      "componentType": 5126,
+      "count": 448,
+      "type": "VEC3",
+      "max": [
+        518.7809,
+        -304.210358,
+        6.732421
+      ],
+      "min": [
+        -463.853119,
+        -538.463745,
+        -6.266644
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 202332,
+      "componentType": 5126,
+      "count": 448,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1440,
+      "componentType": 5126,
+      "count": 448,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 102726,
+      "componentType": 5123,
+      "count": 672,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 207708,
+      "componentType": 5126,
+      "count": 52,
+      "type": "VEC3",
+      "max": [
+        110.694351,
+        -214.674438,
+        -6.397638
+      ],
+      "min": [
+        18.8327026,
+        -217.51236,
+        -6.725722
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 207708,
+      "componentType": 5126,
+      "count": 52,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 104070,
+      "componentType": 5123,
+      "count": 120,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 208332,
+      "componentType": 5126,
+      "count": 4604,
+      "type": "VEC3",
+      "max": [
+        -57.6743927,
+        229.78067,
+        -5.90223074
+      ],
+      "min": [
+        -136.502228,
+        73.01487,
+        -5.93503952
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 208332,
+      "componentType": 5126,
+      "count": 4604,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 5024,
+      "componentType": 5126,
+      "count": 4604,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 104310,
+      "componentType": 5123,
+      "count": 12720,
+      "type": "SCALAR"
+    }
+  ],
+  "materials": [
+    {
+      "name": "TCXD-Earth",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.498039216,
+          0.3882353,
+          0.321568638,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Grass-Medium",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.286394149,
+          0.326058924,
+          0.153169587,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Blank Area",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.1254902,
+          0.4117647,
+          0.345098048,
+          1.0
+        ],
+        "metallicFactor": 0.51,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Earth",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 1,
+        "scale": 0.3
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Brick-Fish Scale",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.621208668,
+          0.621213555,
+          0.621266,
+          1.0
+        ],
+        "metallicFactor": 0.44,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 2,
+        "scale": 0.01
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Grass-Football Yard",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.490196079,
+          0.784313738,
+          0.0509803928,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Grass-Tennis Court",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.506994545,
+          0.563033938,
+          0.353468865,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Finish-Concrete Pavement",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Poche",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Water-River",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2,
+          0.7882353,
+          0.956862748,
+          0.407499969
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "alphaMode": "BLEND",
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Brick",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Sidewalk",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6901961,
+          0.6901961,
+          0.6901961,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "01. CAT BOI CAO DO",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.356862754,
+          0.356862754,
+          0.356862754,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Road-External",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.121568628,
+          0.121568628,
+          0.121568628,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Road-Internal",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "01.VKD",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.90196085,
+          0.913725555,
+          0.92549026,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 3,
+        "scale": 0.0300000012
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Concrete-CiP-M250",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6946763,
+          0.694660962,
+          0.6950992,
+          1.0
+        ],
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Paint-White",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9080968,
+          0.906552851,
+          0.897381365,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 4
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 5,
+        "scale": 0.005
+      },
+      "doubleSided": true
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    },
+    {
+      "source": 2
+    },
+    {
+      "source": 3
+    },
+    {
+      "source": 4
+    },
+    {
+      "source": 5
+    }
+  ],
+  "images": [
+    {
+      "uri": "Textures/Sitework.Planting.Gravel.Mixed.png"
+    },
+    {
+      "uri": "Textures/Sitework.Planting.Gravel.Mixed.bump.png"
+    },
+    {
+      "uri": "Textures/Thermal - Moisture.Shingles.Halfround.bump.jpg"
+    },
+    {
+      "uri": "Textures/Finishes.Painting.Paint.Bump.jpg"
+    },
+    {
+      "uri": "Textures/Finishes.Painting.Paint.White.Flaking.jpg"
+    },
+    {
+      "uri": "Textures/Finishes.Painting.Paint.Flaking.Bump.jpg"
+    }
+  ]
+}

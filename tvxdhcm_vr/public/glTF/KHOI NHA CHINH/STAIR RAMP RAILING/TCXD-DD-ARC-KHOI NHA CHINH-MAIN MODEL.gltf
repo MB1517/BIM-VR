@@ -1,0 +1,559 @@
+{
+  "asset": {
+    "generator": "glTF Exporter addin for Revit",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.707106769,
+        0.0,
+        0.0,
+        -0.707106769
+      ],
+      "scale": [
+        0.3048,
+        0.3048,
+        0.3048
+      ],
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "mesh": 0
+    },
+    {
+      "mesh": 1
+    },
+    {
+      "mesh": 2
+    },
+    {
+      "mesh": 3
+    },
+    {
+      "mesh": 4
+    },
+    {
+      "mesh": 5
+    },
+    {
+      "mesh": 6
+    }
+  ],
+  "meshes": [
+    {
+      "name": "TCXD-Brick",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Granite Black",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5
+          },
+          "indices": 6,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Graniteto",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 7,
+            "NORMAL": 8,
+            "TEXCOORD_0": 9
+          },
+          "indices": 10,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Granit",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 11,
+            "NORMAL": 12,
+            "TEXCOORD_0": 13
+          },
+          "indices": 14,
+          "material": 3
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Finish-Be tong da mi",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 15,
+            "NORMAL": 16
+          },
+          "indices": 17,
+          "material": 4
+        }
+      ]
+    },
+    {
+      "name": "DEFAULT",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 18,
+            "NORMAL": 19
+          },
+          "indices": 20,
+          "material": 5
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Metal-Paint Gray",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 21,
+            "NORMAL": 22
+          },
+          "indices": 23,
+          "material": 6
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TCXD-DD-ARC-KHOI NHA CHINH-MAIN MODEL_0.bin",
+      "byteLength": 3977130
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1419060,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1419060,
+      "byteLength": 1419060,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2838120,
+      "byteLength": 578832,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3416952,
+      "byteLength": 560178,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 11198,
+      "type": "VEC3",
+      "max": [
+        159.26,
+        93.8929443,
+        83.5958
+      ],
+      "min": [
+        -124.204567,
+        -137.9396,
+        -6.56168
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 11198,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 11198,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 17514,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 134376,
+      "componentType": 5126,
+      "count": 354,
+      "type": "VEC3",
+      "max": [
+        133.997528,
+        54.51444,
+        30.7578735
+      ],
+      "min": [
+        114.312492,
+        51.5616837,
+        28.5433064
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 134376,
+      "componentType": 5126,
+      "count": 354,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 35028,
+      "componentType": 5123,
+      "count": 834,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 138624,
+      "componentType": 5126,
+      "count": 57333,
+      "type": "VEC3",
+      "max": [
+        153.682571,
+        93.8929443,
+        83.6614151
+      ],
+      "min": [
+        -124.204567,
+        -124.192871,
+        -4.92126
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 138624,
+      "componentType": 5126,
+      "count": 57333,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 89584,
+      "componentType": 5126,
+      "count": 57333,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 36696,
+      "componentType": 5123,
+      "count": 116973,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 826620,
+      "componentType": 5126,
+      "count": 3823,
+      "type": "VEC3",
+      "max": [
+        159.26,
+        89.20229,
+        9.128934E-12
+      ],
+      "min": [
+        48.7613144,
+        -138.070831,
+        -6.56168
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 826620,
+      "componentType": 5126,
+      "count": 3823,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 548248,
+      "componentType": 5126,
+      "count": 3823,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 270642,
+      "componentType": 5123,
+      "count": 8517,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 872496,
+      "componentType": 5126,
+      "count": 1177,
+      "type": "VEC3",
+      "max": [
+        136.776672,
+        24.0026646,
+        9.164225E-12
+      ],
+      "min": [
+        -121.907974,
+        -174.104889,
+        -6.07842731
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 872496,
+      "componentType": 5126,
+      "count": 1177,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 287676,
+      "componentType": 5123,
+      "count": 3501,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 886620,
+      "componentType": 5126,
+      "count": 5620,
+      "type": "VEC3",
+      "max": [
+        153.650436,
+        89.61192,
+        73.06538
+      ],
+      "min": [
+        -108.1531,
+        -154.2472,
+        -4.917391
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 886620,
+      "componentType": 5126,
+      "count": 5620,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 294678,
+      "componentType": 5123,
+      "count": 10152,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 954060,
+      "componentType": 5126,
+      "count": 38750,
+      "type": "VEC3",
+      "max": [
+        153.650436,
+        89.61192,
+        72.21236
+      ],
+      "min": [
+        -108.128494,
+        -154.2204,
+        -4.560659
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 954060,
+      "componentType": 5126,
+      "count": 38750,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 314982,
+      "componentType": 5123,
+      "count": 122598,
+      "type": "SCALAR"
+    }
+  ],
+  "materials": [
+    {
+      "name": "TCXD-Brick",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 1,
+        "scale": 0.0015
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Granite Black",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.630936861,
+          0.6534123,
+          0.699636459,
+          1.0
+        ],
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Graniteto",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.630936861,
+          0.6534123,
+          0.699636459,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Granit",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.630936861,
+          0.6534123,
+          0.699636459,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Finish-Be tong da mi",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "DEFAULT",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.498039216,
+          0.498039216,
+          0.498039216,
+          1.0
+        ],
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Metal-Paint Gray",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6389565,
+          0.638965368,
+          0.6391898,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    },
+    {
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "uri": "Textures/Brick_Non_Uniform_Running_Burgundy.png"
+    },
+    {
+      "uri": "Textures/Brick_Non_Uniform_Running_bump.png"
+    },
+    {
+      "uri": "Textures/Finishes.Flooring.Marble.White.jpg"
+    }
+  ]
+}
