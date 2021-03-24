@@ -76,7 +76,7 @@ class App{
 
 		this.scene.background = new THREE.Color(0xffffff);
 		//fog
-        this.scene.fog = new THREE.Fog( 0xa0a0a0, 50, 200 );
+        this.scene.fog = new THREE.Fog( 0xa0a0a0, 50, 2000 );
 
 		// ground
 		// const ground = new THREE.Mesh( new THREE.PlaneBufferGeometry( 200, 200 ), new THREE.MeshPhongMaterial( { color: 0x999999, depthWrite: false } ) );
@@ -249,7 +249,6 @@ class App{
         this.controller.addEventListener( 'touchstart', onSelectStart );
         this.controller.addEventListener( 'touchend', onSelectEnd );
         this.controller.addEventListener( 'connected', function ( event ) {
-
             const mesh = self.buildController.call(self, event.data );
             mesh.scale.z = 0;
             this.add( mesh );
@@ -277,7 +276,7 @@ class App{
         this.dummyCam = new THREE.Object3D();
         this.camera.add( this.dummyCam );
         // console.log(this.renderer.xr);
-        this.scene.fog = new THREE.Fog( 0xa0a0a0, 50, 200 );
+        this.scene.fog = new THREE.Fog( 0xa0a0a0, 50, 2000 );
     }
     
     buildController( data ) {

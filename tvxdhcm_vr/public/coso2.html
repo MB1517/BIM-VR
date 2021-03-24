@@ -52,8 +52,6 @@
 			bPrev.addEventListener('mousedown', prevImage, false);				
 			
 			
-			
-			
 			function nextImage()
 			{
 				if (imgNum <= maxImgNum){
@@ -62,7 +60,6 @@
 				if(imgNum > maxImgNum){
 					imgNum = 0;					
 				}
-				curImgNum = imgNum;
 				name  = "./pano2/CS2_ ("+imgNum+").jpg";
 				imgName.textContent = name;
 
@@ -70,25 +67,24 @@
 				var newmaterial = new THREE.MeshBasicMaterial( { map: newtexture } );
 				var newmesh = new THREE.Mesh( geometry, newmaterial );
 
-				scene.remove(mesh);
+				scene.remove(curMesh);
 				scene.add(newmesh);
-
+				curMesh = newmesh;
 			}
 			function prevImage(){				
 				if(imgNum == 0){
 					imgNum = maxImgNum;
 				}
 				else{imgNum -= 1;}
-				curImgNum = imgNum;
 				name  = "./pano2/CS2_ ("+imgNum+").jpg";
 				imgName.textContent = name;
 				var newtexture = new THREE.TextureLoader().load(name);
 				var newmaterial = new THREE.MeshBasicMaterial( { map: newtexture } );
 				var newmesh = new THREE.Mesh( geometry, newmaterial );
 
-				scene.remove(mesh);
+				scene.remove(curMesh);
 				scene.add(newmesh);
-
+				curMesh = newmesh;
 			}
 
 			var geometry = new THREE.SphereBufferGeometry( 500, 60, 40 );
@@ -97,13 +93,14 @@
 			var texture = new THREE.TextureLoader().load(name);
 			var material = new THREE.MeshBasicMaterial( { map: texture } );
 			mesh = new THREE.Mesh( geometry, material );
+			var curMesh = mesh;
 
 			if (true){
-				init(name);
+				init();
 				animate();
 			}
 
-			function init(name) {
+			function init() {
 				
 				var container;				
 				container = document.createElement('threejs');
@@ -184,13 +181,9 @@
 				camera.fov = THREE.Math.clamp( fov, 10, 75 );
 				camera.updateProjectionMatrix();
 			}
-			function animate() {
-				
-				// console.log(name);
-						
-
+			function animate() {				
+				// console.log(name);	
 				requestAnimationFrame(animate);
-
 				update();
 			}
 			function update() {
@@ -201,21 +194,13 @@
 				lat = Math.max( - 85, Math.min( 85, lat ) );
 				phi = THREE.Math.degToRad( 90 - lat );
 				theta = THREE.Math.degToRad( lon );
-				camera.target.x = 500 * Math.sin( phi ) * Math.cos( theta );
+				camera.target.x = 500 * Math.sin( phi ) * Math.cos(theta);
 				camera.target.y = 500 * Math.cos( phi );
-				camera.target.z = 500 * Math.sin( phi ) * Math.sin( theta );
+				camera.target.z = 500 * Math.sin( phi ) * Math.sin(theta);
 				camera.lookAt( camera.target );
-				/*
-				// distortion
-				camera.position.copy( camera.target ).negate();
-				*/		
 
 				renderer.render(scene,camera);
 			}
-
-			
-			// var btt = document.getElementById('info');
-			// container.appendChild(btt)
 			console.log(document);
 		</script>
 		

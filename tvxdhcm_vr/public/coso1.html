@@ -22,12 +22,19 @@
 				<button type="button" class="bprev" id = 'bprv'>-</button>
 				<button type="button" class="bhome"><a href=".\index.html">Home</a></button>
 				<button type="button" class="bnext" id = 'bnxt' >+</button>
-				<button type="button" class="btn"><a href=".\vr.html">--VR--</a></button>	
+				<button type="button" class="btn"><a href=".\cs1vr.html">--VR--</a></button>	
 				<p id ='imgName'></p>
 			</div>
 		</div>
 		<script type="module">
-			import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r108/build/three.module.js';
+			import * as THREE from './libs/three/three.module.js';
+			import { VRButton } from './libs/three/jsm/VRButton.js';
+			import { XRControllerModelFactory } from './libs/three/jsm/XRControllerModelFactory.js';
+			import { BoxLineGeometry } from './libs/three/jsm/BoxLineGeometry.js';
+			import { Stats } from './libs/stats.module.js';
+			import { OrbitControls } from './libs/three/jsm/OrbitControls.js';
+			import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/threejs/r125/examples/jsm/loaders/GLTFLoader.js';
+			import { ColladaLoader } from './libs/three/loaders/ColladaLoader.js';
 			
 			var camera, scene, renderer,mesh, imgName;
             
@@ -39,9 +46,9 @@
 
 			var imgNum = 0;
 			var curImgNum = imgNum;
-			var maxImgNum = 82;
+			var maxImgNum = 21;
 			var path = "./pano/"
-			var name = "./pano/"+"CS1_ ("+imgNum+").jpg";
+			var name = path+"CS1_ ("+imgNum+").jpg";
 
 			imgName = document.getElementById('imgName');
 			imgName.textContent = name;
@@ -49,11 +56,8 @@
 			var bNext = document.getElementById('bnxt')
 			var bPrev = document.getElementById('bprv')
 			bNext.addEventListener('mousedown', nextImage, false);
-			bPrev.addEventListener('mousedown', prevImage, false);				
-			
-			
-			
-			
+			bPrev.addEventListener('mousedown', prevImage, false);
+
 			function nextImage()
 			{
 				if (imgNum <= maxImgNum){
@@ -70,8 +74,9 @@
 				var newmaterial = new THREE.MeshBasicMaterial( { map: newtexture } );
 				var newmesh = new THREE.Mesh( geometry, newmaterial );
 
-				scene.remove(mesh);
+				scene.remove(curMesh);
 				scene.add(newmesh);
+				curMesh = newmesh;
 
 			}
 			function prevImage(){				
@@ -86,9 +91,9 @@
 				var newmaterial = new THREE.MeshBasicMaterial( { map: newtexture } );
 				var newmesh = new THREE.Mesh( geometry, newmaterial );
 
-				scene.remove(mesh);
+				scene.remove(curMesh);
 				scene.add(newmesh);
-
+				curMesh = newmesh;
 			}
 
 			var geometry = new THREE.SphereBufferGeometry( 500, 60, 40 );
@@ -97,13 +102,13 @@
 			var texture = new THREE.TextureLoader().load(name);
 			var material = new THREE.MeshBasicMaterial( { map: texture } );
 			mesh = new THREE.Mesh( geometry, material );
-
+			var curMesh = mesh;
 			if (true){
-				init(name);
+				init();
 				animate();
 			}
 
-			function init(name) {
+			function init() {
 				
 				var container;				
 				container = document.createElement('threejs');
@@ -149,8 +154,7 @@
 				// 	document.body.style.opacity = 1;
 				// }, false );
 				//
-				window.addEventListener( 'resize', onWindowResize, false );
-				
+				window.addEventListener( 'resize', onWindowResize, false );				
 			}
 
 			function onWindowResize() {
@@ -184,10 +188,8 @@
 				camera.fov = THREE.Math.clamp( fov, 10, 75 );
 				camera.updateProjectionMatrix();
 			}
-			function animate() {
-				
-				// console.log(name);
-						
+			function animate() {				
+				// console.log(name);					
 
 				requestAnimationFrame(animate);
 
@@ -212,7 +214,6 @@
 
 				renderer.render(scene,camera);
 			}
-
 			
 			// var btt = document.getElementById('info');
 			// container.appendChild(btt)

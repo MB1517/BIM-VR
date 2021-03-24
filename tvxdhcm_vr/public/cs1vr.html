@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>TCXD-CS1-VR</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	   
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="pano.css">
+	</head>
+	<body>
+        <div id="container">
+            <!-- <canvas id = 'container'></canvas> -->
+                <!-- <div class = 'dnav' id = 'info'>			
+                    <button type="button" class="bprev" id = 'bprv'>-</button>
+                    <button type="button" class="bhome"><a href=".\index.html">Home</a></button>
+                    <button type="button" class="bnext" id = 'bnxt' >+</button>
+                    <button type="button" class="btn"><a href=".\coso1.html">--PANO--</a></button>	
+                    <p id ='imgName'></p>
+                </div> -->
+            </div>
+        <script type="module">
+            import { App } from './app4.js';
+
+            document.addEventListener("DOMContentLoaded", function(){
+                const app = new App();
+                window.app = app;
+            });
+        </script>		
+	</body>
+</html>
