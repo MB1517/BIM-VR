@@ -27,12 +27,17 @@ class App{
         this.camera.position.set( posX, posY, posZ );
 
 		this.scene = new THREE.Scene();
-        this.scene.background = new THREE.Color(0,0,0);
+        
+        console.log({element: this.scene.background})
 
-		this.scene.add( new THREE.HemisphereLight( 0xffffff, 0x404040 ) );
+        const light0 = new THREE.HemisphereLight( 0xffffff, 0x404040 );
+        light0.intensity = 0.5;
+
+		this.scene.add(light0);
 
         const light = new THREE.DirectionalLight( 0xffffff );
         light.position.set( 1, 1, 1 ).normalize();
+        light.intensity = 0.5;
 		this.scene.add( light );
 			
 		this.renderer = new THREE.WebGLRenderer({ antialias: true } );
@@ -69,9 +74,9 @@ class App{
     
     initScene(){
 
-		this.scene.background = new THREE.Color( 0xa0a0a0 );
+		this.scene.background = new THREE.Color(0xffffff);
 		//fog
-        this.scene.fog = new THREE.Fog( 0xa0a0a0, 500, 10000 );
+        this.scene.fog = new THREE.Fog( 0xa0a0a0, 50, 200 );
 
 		// ground
 		// const ground = new THREE.Mesh( new THREE.PlaneBufferGeometry( 200, 200 ), new THREE.MeshPhongMaterial( { color: 0x999999, depthWrite: false } ) );
@@ -271,7 +276,8 @@ class App{
         
         this.dummyCam = new THREE.Object3D();
         this.camera.add( this.dummyCam );
-        console.log(this.renderer.xr);
+        // console.log(this.renderer.xr);
+        this.scene.fog = new THREE.Fog( 0xa0a0a0, 50, 200 );
     }
     
     buildController( data ) {
@@ -290,7 +296,6 @@ class App{
                 return new THREE.Line( geometry, material );
 
             case 'gaze':
-
                 geometry = new THREE.RingBufferGeometry( 0.02, 0.04, 32 ).translate( 0, 0, - 1 );
                 material = new THREE.MeshBasicMaterial( { opacity: 0.5, transparent: true } );
                 return new THREE.Mesh( geometry, material );

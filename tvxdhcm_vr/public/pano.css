@@ -1,0 +1,22 @@
+.dnav{
+    position:absolute
+}
+button{
+    margin-top: 0;
+}
+.bprev{
+    border-radius: 5px 0px 0px 5px;
+    
+}
+.bnext{
+    border-radius: 0px 5px 5px 0px;
+}
+.container{
+    width:100%;
+    height:100%;
+}
+
+canvas{
+    margin: 0px;
+    padding: 0px;
+}
