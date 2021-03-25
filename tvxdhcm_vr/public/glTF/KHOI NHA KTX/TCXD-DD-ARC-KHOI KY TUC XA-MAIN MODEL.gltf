@@ -1,0 +1,1389 @@
+{
+  "asset": {
+    "generator": "glTF Exporter addin for Revit",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.707106769,
+        0.0,
+        0.0,
+        -0.707106769
+      ],
+      "scale": [
+        0.3048,
+        0.3048,
+        0.3048
+      ],
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "mesh": 0
+    },
+    {
+      "mesh": 1
+    },
+    {
+      "mesh": 2
+    },
+    {
+      "mesh": 3
+    },
+    {
+      "mesh": 4
+    },
+    {
+      "mesh": 5
+    },
+    {
+      "mesh": 6
+    },
+    {
+      "mesh": 7
+    },
+    {
+      "mesh": 8
+    },
+    {
+      "mesh": 9
+    },
+    {
+      "mesh": 10
+    },
+    {
+      "mesh": 11
+    },
+    {
+      "mesh": 12
+    },
+    {
+      "mesh": 13
+    },
+    {
+      "mesh": 14
+    },
+    {
+      "mesh": 15
+    },
+    {
+      "mesh": 16
+    },
+    {
+      "mesh": 17
+    },
+    {
+      "mesh": 18
+    }
+  ],
+  "meshes": [
+    {
+      "name": "TCXD-Wall Paint-Interior-White",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Wall Paint-Exterior-White",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "Default Wall",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9
+          },
+          "indices": 10,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Wall Paint-Dark",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 11,
+            "NORMAL": 12,
+            "TEXCOORD_0": 13
+          },
+          "indices": 14,
+          "material": 3
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Brick-Concrete-19x19x39",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 15,
+            "NORMAL": 16,
+            "TEXCOORD_0": 17
+          },
+          "indices": 18,
+          "material": 4
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Brick",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 19,
+            "NORMAL": 20,
+            "TEXCOORD_0": 21
+          },
+          "indices": 22,
+          "material": 5
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Graniteto",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 23,
+            "NORMAL": 24,
+            "TEXCOORD_0": 25
+          },
+          "indices": 26,
+          "material": 6
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Metal-Alumium",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 27,
+            "NORMAL": 28
+          },
+          "indices": 29,
+          "material": 7
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Glass",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 30,
+            "NORMAL": 31
+          },
+          "indices": 32,
+          "material": 8
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Plaster-Interior",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 33,
+            "NORMAL": 34
+          },
+          "indices": 35,
+          "material": 9
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Finish-Cement-(tạo nhám)",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 36,
+            "NORMAL": 37
+          },
+          "indices": 38,
+          "material": 10
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Ceramic-500x500mm",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 39,
+            "NORMAL": 40
+          },
+          "indices": 41,
+          "material": 11
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Ceramic-300x300mm",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 42,
+            "NORMAL": 43
+          },
+          "indices": 44,
+          "material": 12
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Brick-AAC-20x20x60",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 45,
+            "NORMAL": 46,
+            "TEXCOORD_0": 47
+          },
+          "indices": 48,
+          "material": 13
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Brick-AAC-10x20x60",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 49,
+            "NORMAL": 50,
+            "TEXCOORD_0": 51
+          },
+          "indices": 52,
+          "material": 14
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Brick-Concrete-9x19x39",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 53,
+            "NORMAL": 54,
+            "TEXCOORD_0": 55
+          },
+          "indices": 56,
+          "material": 15
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Metal-Alumium",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 57,
+            "NORMAL": 58
+          },
+          "indices": 59,
+          "material": 7
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Ceramic-300x600mm",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 60,
+            "NORMAL": 61
+          },
+          "indices": 62,
+          "material": 16
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Ceiling-Gypsum Board-White",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 63,
+            "NORMAL": 64,
+            "TEXCOORD_0": 65
+          },
+          "indices": 66,
+          "material": 17
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TCXD-DD-ARC-KHOI KY TUC XA-MAIN MODEL_0.bin",
+      "byteLength": 7068214
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 2901732,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2901732,
+      "byteLength": 2901732,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5803464,
+      "byteLength": 360472,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6163936,
+      "byteLength": 904278,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 14294,
+      "type": "VEC3",
+      "max": [
+        147.841415,
+        221.234879,
+        69.71785
+      ],
+      "min": [
+        -13.247613,
+        142.6916,
+        -3.937008
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 14294,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 14294,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 36306,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 171528,
+      "componentType": 5126,
+      "count": 2342,
+      "type": "VEC3",
+      "max": [
+        148.2358,
+        221.234879,
+        71.68635
+      ],
+      "min": [
+        -13.247613,
+        142.970474,
+        -3.937008
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 171528,
+      "componentType": 5126,
+      "count": 2342,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 114352,
+      "componentType": 5126,
+      "count": 2342,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 72612,
+      "componentType": 5123,
+      "count": 5256,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 199632,
+      "componentType": 5126,
+      "count": 36710,
+      "type": "VEC3",
+      "max": [
+        148.2358,
+        221.234879,
+        71.68635
+      ],
+      "min": [
+        -13.248518,
+        142.690659,
+        -3.937008
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 199632,
+      "componentType": 5126,
+      "count": 36710,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 83124,
+      "componentType": 5123,
+      "count": 61476,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 640152,
+      "componentType": 5126,
+      "count": 931,
+      "type": "VEC3",
+      "max": [
+        140.427368,
+        213.689072,
+        71.68635
+      ],
+      "min": [
+        -13.248518,
+        142.690659,
+        -3.937008
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 640152,
+      "componentType": 5126,
+      "count": 931,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 133088,
+      "componentType": 5126,
+      "count": 931,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 206076,
+      "componentType": 5123,
+      "count": 1527,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 651324,
+      "componentType": 5126,
+      "count": 294,
+      "type": "VEC3",
+      "max": [
+        118.281067,
+        212.9672,
+        59.8753281
+      ],
+      "min": [
+        -12.1977434,
+        142.6916,
+        -0.164042
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 651324,
+      "componentType": 5126,
+      "count": 294,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 140536,
+      "componentType": 5126,
+      "count": 294,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 209130,
+      "componentType": 5123,
+      "count": 546,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 654852,
+      "componentType": 5126,
+      "count": 7223,
+      "type": "VEC3",
+      "max": [
+        148.104324,
+        221.039474,
+        59.8753281
+      ],
+      "min": [
+        -13.247613,
+        142.6916,
+        -2.59186363
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 654852,
+      "componentType": 5126,
+      "count": 7223,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 142888,
+      "componentType": 5126,
+      "count": 7223,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 210222,
+      "componentType": 5123,
+      "count": 12021,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 741528,
+      "componentType": 5126,
+      "count": 18528,
+      "type": "VEC3",
+      "max": [
+        148.235565,
+        221.170715,
+        60.3674545
+      ],
+      "min": [
+        -11.8696594,
+        152.268768,
+        -2.59186363
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 741528,
+      "componentType": 5126,
+      "count": 18528,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 200672,
+      "componentType": 5126,
+      "count": 18528,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 234264,
+      "componentType": 5123,
+      "count": 45720,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 963864,
+      "componentType": 5126,
+      "count": 65532,
+      "type": "VEC3",
+      "max": [
+        138.491455,
+        212.704727,
+        57.0866127
+      ],
+      "min": [
+        -12.263361,
+        145.119415,
+        -2.132546
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 963864,
+      "componentType": 5126,
+      "count": 65532,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 325704,
+      "componentType": 5123,
+      "count": 120942,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1750248,
+      "componentType": 5126,
+      "count": 19008,
+      "type": "VEC3",
+      "max": [
+        138.163376,
+        213.541336,
+        68.56956
+      ],
+      "min": [
+        -12.1075211,
+        145.44751,
+        0.09842521
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1750248,
+      "componentType": 5126,
+      "count": 19008,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 567588,
+      "componentType": 5123,
+      "count": 28512,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1978344,
+      "componentType": 5126,
+      "count": 21141,
+      "type": "VEC3",
+      "max": [
+        144.2988,
+        217.232285,
+        70.86614
+      ],
+      "min": [
+        -12.5267334,
+        143.412445,
+        -2.72493243
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1978344,
+      "componentType": 5126,
+      "count": 21141,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 624612,
+      "componentType": 5123,
+      "count": 36303,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2232036,
+      "componentType": 5126,
+      "count": 188,
+      "type": "VEC3",
+      "max": [
+        139.705215,
+        216.5861,
+        70.86614
+      ],
+      "min": [
+        -12.5267334,
+        143.412445,
+        -2.559055
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2232036,
+      "componentType": 5126,
+      "count": 188,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 697218,
+      "componentType": 5123,
+      "count": 492,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2234292,
+      "componentType": 5126,
+      "count": 2359,
+      "type": "VEC3",
+      "max": [
+        144.2988,
+        217.232285,
+        60.3674545
+      ],
+      "min": [
+        -11.8040428,
+        143.462311,
+        4.564349E-12
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2234292,
+      "componentType": 5126,
+      "count": 2359,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 698202,
+      "componentType": 5123,
+      "count": 6513,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2262600,
+      "componentType": 5126,
+      "count": 1566,
+      "type": "VEC3",
+      "max": [
+        123.859131,
+        213.229233,
+        48.55643
+      ],
+      "min": [
+        -7.06322956,
+        148.433075,
+        -1.968504
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2262600,
+      "componentType": 5126,
+      "count": 1566,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 711228,
+      "componentType": 5123,
+      "count": 3630,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2281392,
+      "componentType": 5126,
+      "count": 201,
+      "type": "VEC3",
+      "max": [
+        44.72483,
+        212.639114,
+        59.219162
+      ],
+      "min": [
+        -7.76861,
+        154.289368,
+        -0.164042
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2281392,
+      "componentType": 5126,
+      "count": 201,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 348896,
+      "componentType": 5126,
+      "count": 201,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 718488,
+      "componentType": 5123,
+      "count": 363,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2283804,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC3",
+      "max": [
+        116.246948,
+        205.913391,
+        58.7270355
+      ],
+      "min": [
+        12.8350611,
+        156.0445,
+        -0.82021
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2283804,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 350504,
+      "componentType": 5126,
+      "count": 148,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 719214,
+      "componentType": 5123,
+      "count": 288,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2285580,
+      "componentType": 5126,
+      "count": 251,
+      "type": "VEC3",
+      "max": [
+        103.287819,
+        195.250656,
+        59.05512
+      ],
+      "min": [
+        -8.818479,
+        169.003922,
+        12.7952757
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2285580,
+      "componentType": 5126,
+      "count": 251,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 351688,
+      "componentType": 5126,
+      "count": 251,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 719790,
+      "componentType": 5123,
+      "count": 405,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2288592,
+      "componentType": 5126,
+      "count": 20316,
+      "type": "VEC3",
+      "max": [
+        126.680656,
+        213.68898,
+        68.89764
+      ],
+      "min": [
+        -12.263361,
+        146.284119,
+        4.564491E-12
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2288592,
+      "componentType": 5126,
+      "count": 20316,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 720600,
+      "componentType": 5123,
+      "count": 40626,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2532384,
+      "componentType": 5126,
+      "count": 29932,
+      "type": "VEC3",
+      "max": [
+        123.859131,
+        212.917984,
+        55.7742767
+      ],
+      "min": [
+        -7.06322956,
+        148.8924,
+        4.564349E-12
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2532384,
+      "componentType": 5126,
+      "count": 29932,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 801852,
+      "componentType": 5123,
+      "count": 49728,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2891568,
+      "componentType": 5126,
+      "count": 847,
+      "type": "VEC3",
+      "max": [
+        123.399818,
+        212.917984,
+        57.7427826
+      ],
+      "min": [
+        -7.06322956,
+        148.8924,
+        9.186352
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2891568,
+      "componentType": 5126,
+      "count": 847,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 353696,
+      "componentType": 5126,
+      "count": 847,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 901308,
+      "componentType": 5123,
+      "count": 1485,
+      "type": "SCALAR"
+    }
+  ],
+  "materials": [
+    {
+      "name": "TCXD-Wall Paint-Interior-White",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.90196085,
+          0.913725555,
+          0.92549026,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 0,
+        "scale": 0.0300000012
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Wall Paint-Exterior-White",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.90196085,
+          0.913725555,
+          0.92549026,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 0,
+        "scale": 0.0300000012
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Default Wall",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5019608,
+          0.5019608,
+          0.5019608,
+          1.0
+        ],
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Wall Paint-Dark",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.164705887,
+          0.164705887,
+          0.164705887,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 1,
+        "scale": 0.005
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Brick-Concrete-19x19x39",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 3,
+        "scale": 0.0015
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Brick",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 3,
+        "scale": 0.0015
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Graniteto",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.630936861,
+          0.6534123,
+          0.699636459,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 4
+        },
+        "metallicFactor": 0.5477226,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Metal-Alumium",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.996,
+          0.997,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 0.2,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Glass",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.443137258,
+          0.8156863,
+          1.0,
+          0.25
+        ],
+        "metallicFactor": 0.15
+      },
+      "alphaMode": "BLEND",
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Plaster-Interior",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.63,
+          0.63,
+          0.63,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.25
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Finish-Cement-(tạo nhám)",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Ceramic-500x500mm",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          0.875,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.25
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Ceramic-300x300mm",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5019608,
+          0.5019608,
+          0.0,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.25
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Brick-AAC-20x20x60",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 3,
+        "scale": 0.0015
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Brick-AAC-10x20x60",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 3,
+        "scale": 0.0015
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Brick-Concrete-9x19x39",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 3,
+        "scale": 0.0015
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Ceramic-300x600mm",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          0.875,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.25
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Ceiling-Gypsum Board-White",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.89544636,
+          0.8954639,
+          0.8945511,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 5
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0
+      },
+      "normalTexture": {
+        "index": 6,
+        "scale": 0.01
+      },
+      "doubleSided": true
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    },
+    {
+      "source": 2
+    },
+    {
+      "source": 3
+    },
+    {
+      "source": 4
+    },
+    {
+      "source": 5
+    },
+    {
+      "source": 6
+    }
+  ],
+  "images": [
+    {
+      "uri": "Textures/Finishes.Painting.Paint.Bump.jpg"
+    },
+    {
+      "uri": "Textures/Finishes.Painting.Paint.Flaking.Bump.jpg"
+    },
+    {
+      "uri": "Textures/Brick_Non_Uniform_Running_Burgundy.png"
+    },
+    {
+      "uri": "Textures/Brick_Non_Uniform_Running_bump.png"
+    },
+    {
+      "uri": "Textures/Finishes.Flooring.Marble.White.jpg"
+    },
+    {
+      "uri": "Textures/Finishes.Gypsum Board.Painted.White.jpg"
+    },
+    {
+      "uri": "Textures/Finishes.Gypsum Board.Painted.White.bump.jpg"
+    }
+  ]
+}

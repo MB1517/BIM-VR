@@ -1,0 +1,1050 @@
+{
+  "asset": {
+    "generator": "glTF Exporter addin for Revit",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.707106769,
+        0.0,
+        0.0,
+        -0.707106769
+      ],
+      "scale": [
+        0.3048,
+        0.3048,
+        0.3048
+      ],
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "mesh": 0
+    },
+    {
+      "mesh": 1
+    },
+    {
+      "mesh": 2
+    },
+    {
+      "mesh": 3
+    },
+    {
+      "mesh": 4
+    },
+    {
+      "mesh": 5
+    },
+    {
+      "mesh": 6
+    },
+    {
+      "mesh": 7
+    },
+    {
+      "mesh": 8
+    },
+    {
+      "mesh": 9
+    },
+    {
+      "mesh": 10
+    },
+    {
+      "mesh": 11
+    },
+    {
+      "mesh": 12
+    },
+    {
+      "mesh": 13
+    },
+    {
+      "mesh": 14
+    },
+    {
+      "mesh": 15
+    },
+    {
+      "mesh": 16
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Material of Chair Frame",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Material of Upholstry - Chair",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "Base Material",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7
+          },
+          "indices": 8,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "name": "Glass Top Material",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10
+          },
+          "indices": 11,
+          "material": 3
+        }
+      ]
+    },
+    {
+      "name": "Default",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13
+          },
+          "indices": 14,
+          "material": 4
+        }
+      ]
+    },
+    {
+      "name": "Plastic 2",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 15,
+            "NORMAL": 16
+          },
+          "indices": 17,
+          "material": 5
+        }
+      ]
+    },
+    {
+      "name": "Plastic",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 18,
+            "NORMAL": 19
+          },
+          "indices": 20,
+          "material": 6
+        }
+      ]
+    },
+    {
+      "name": "Plastic - Silver",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 21,
+            "NORMAL": 22
+          },
+          "indices": 23,
+          "material": 7
+        }
+      ]
+    },
+    {
+      "name": "Plastic - Black",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 24,
+            "NORMAL": 25
+          },
+          "indices": 26,
+          "material": 8
+        }
+      ]
+    },
+    {
+      "name": "Metal - Paint Finish - Ivory,Glossy",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 27,
+            "NORMAL": 28
+          },
+          "indices": 29,
+          "material": 9
+        }
+      ]
+    },
+    {
+      "name": "Metal - Chrome",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 30,
+            "NORMAL": 31
+          },
+          "indices": 32,
+          "material": 10
+        }
+      ]
+    },
+    {
+      "name": "Table Material",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 33,
+            "NORMAL": 34
+          },
+          "indices": 35,
+          "material": 11
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Gach hoa gio",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 36,
+            "NORMAL": 37
+          },
+          "indices": 38,
+          "material": 12
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Gach hoa gio",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 39,
+            "NORMAL": 40
+          },
+          "indices": 41,
+          "material": 12
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Gach hoa gio",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 42,
+            "NORMAL": 43
+          },
+          "indices": 44,
+          "material": 12
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Gach hoa gio",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 45,
+            "NORMAL": 46
+          },
+          "indices": 47,
+          "material": 12
+        }
+      ]
+    },
+    {
+      "name": "TCXD-Tiling-Gach hoa gio",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 48,
+            "NORMAL": 49
+          },
+          "indices": 50,
+          "material": 12
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TCXD-DD-ARC-KHOI KY TUC XA-MAIN MODEL_0.bin",
+      "byteLength": 8758602
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 3776292,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3776292,
+      "byteLength": 3776292,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7552584,
+      "byteLength": 1206018,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 4232,
+      "type": "VEC3",
+      "max": [
+        71.15309,
+        204.913483,
+        3.698859
+      ],
+      "min": [
+        65.7384644,
+        188.540726,
+        -0.00410105
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 4232,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 13080,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 50784,
+      "componentType": 5126,
+      "count": 224,
+      "type": "VEC3",
+      "max": [
+        71.11455,
+        204.874954,
+        1.7994231
+      ],
+      "min": [
+        65.777,
+        188.579254,
+        1.66818953
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 50784,
+      "componentType": 5126,
+      "count": 224,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 26160,
+      "componentType": 5123,
+      "count": 480,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 53472,
+      "componentType": 5126,
+      "count": 988,
+      "type": "VEC3",
+      "max": [
+        70.34968,
+        204.10907,
+        2.41715884
+      ],
+      "min": [
+        66.54188,
+        189.345139,
+        -0.00410105
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 53472,
+      "componentType": 5126,
+      "count": 988,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27120,
+      "componentType": 5123,
+      "count": 2700,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 65328,
+      "componentType": 5126,
+      "count": 318,
+      "type": "VEC3",
+      "max": [
+        70.10178,
+        204.174683,
+        2.456529
+      ],
+      "min": [
+        66.7897644,
+        189.279526,
+        2.41715884
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 65328,
+      "componentType": 5126,
+      "count": 318,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 32520,
+      "componentType": 5123,
+      "count": 906,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 69144,
+      "componentType": 5126,
+      "count": 2005,
+      "type": "VEC3",
+      "max": [
+        91.30515,
+        193.533234,
+        2.76777744
+      ],
+      "min": [
+        89.28459,
+        191.786728,
+        -0.00410140073
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 69144,
+      "componentType": 5126,
+      "count": 2005,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 34332,
+      "componentType": 5123,
+      "count": 4887,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 93204,
+      "componentType": 5126,
+      "count": 564,
+      "type": "VEC3",
+      "max": [
+        89.14952,
+        194.555038,
+        2.79024768
+      ],
+      "min": [
+        88.4900055,
+        193.8407,
+        2.46172047
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 93204,
+      "componentType": 5126,
+      "count": 564,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 44106,
+      "componentType": 5123,
+      "count": 864,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 99972,
+      "componentType": 5126,
+      "count": 156,
+      "type": "VEC3",
+      "max": [
+        89.14952,
+        194.589691,
+        2.72845149
+      ],
+      "min": [
+        88.4900055,
+        193.812,
+        2.456529
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 99972,
+      "componentType": 5126,
+      "count": 156,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 45834,
+      "componentType": 5123,
+      "count": 240,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 101844,
+      "componentType": 5126,
+      "count": 152,
+      "type": "VEC3",
+      "max": [
+        88.17922,
+        193.438019,
+        3.87083125
+      ],
+      "min": [
+        87.57227,
+        192.076477,
+        2.456529
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 101844,
+      "componentType": 5126,
+      "count": 152,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 46314,
+      "componentType": 5123,
+      "count": 306,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 103668,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3",
+      "max": [
+        88.13049,
+        193.3068,
+        3.77191639
+      ],
+      "min": [
+        88.03481,
+        192.2077,
+        2.86157632
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 103668,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 46926,
+      "componentType": 5123,
+      "count": 6,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 103716,
+      "componentType": 5126,
+      "count": 96,
+      "type": "VEC3",
+      "max": [
+        89.29991,
+        192.248718,
+        2.292487
+      ],
+      "min": [
+        87.77974,
+        191.002,
+        -0.00410105
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 103716,
+      "componentType": 5126,
+      "count": 96,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 46938,
+      "componentType": 5123,
+      "count": 144,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 104868,
+      "componentType": 5126,
+      "count": 312,
+      "type": "VEC3",
+      "max": [
+        89.42491,
+        191.792023,
+        2.20116949
+      ],
+      "min": [
+        89.29991,
+        191.4587,
+        1.198545
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 104868,
+      "componentType": 5126,
+      "count": 312,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 47226,
+      "componentType": 5123,
+      "count": 540,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 108612,
+      "componentType": 5126,
+      "count": 360,
+      "type": "VEC3",
+      "max": [
+        92.55992,
+        194.856979,
+        2.456529
+      ],
+      "min": [
+        87.31058,
+        190.919968,
+        -0.00410105
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 108612,
+      "componentType": 5126,
+      "count": 360,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 48306,
+      "componentType": 5123,
+      "count": 552,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 112932,
+      "componentType": 5126,
+      "count": 65530,
+      "type": "VEC3",
+      "max": [
+        115.689171,
+        211.211945,
+        58.8910751
+      ],
+      "min": [
+        -12.2797651,
+        156.7664,
+        16.7322826
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 112932,
+      "componentType": 5126,
+      "count": 65530,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 49410,
+      "componentType": 5123,
+      "count": 124968,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 899292,
+      "componentType": 5126,
+      "count": 65532,
+      "type": "VEC3",
+      "max": [
+        115.689171,
+        211.950134,
+        58.8910751
+      ],
+      "min": [
+        -12.2797651,
+        156.7664,
+        16.7322826
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 899292,
+      "componentType": 5126,
+      "count": 65532,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 299346,
+      "componentType": 5123,
+      "count": 125454,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1685676,
+      "componentType": 5126,
+      "count": 65532,
+      "type": "VEC3",
+      "max": [
+        115.689171,
+        211.211945,
+        58.1364822
+      ],
+      "min": [
+        -12.2797651,
+        156.7664,
+        16.7322826
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1685676,
+      "componentType": 5126,
+      "count": 65532,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 550254,
+      "componentType": 5123,
+      "count": 122748,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2472060,
+      "componentType": 5126,
+      "count": 65532,
+      "type": "VEC3",
+      "max": [
+        115.689171,
+        211.211945,
+        58.1364822
+      ],
+      "min": [
+        -12.2797651,
+        156.7664,
+        28.5433064
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2472060,
+      "componentType": 5126,
+      "count": 65532,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 795750,
+      "componentType": 5123,
+      "count": 122850,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 3258444,
+      "componentType": 5126,
+      "count": 43154,
+      "type": "VEC3",
+      "max": [
+        108.307281,
+        211.950134,
+        58.8910751
+      ],
+      "min": [
+        -12.2797651,
+        156.766586,
+        16.7322826
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 3258444,
+      "componentType": 5126,
+      "count": 43154,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1041450,
+      "componentType": 5123,
+      "count": 82284,
+      "type": "SCALAR"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Material of Chair Frame",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5686275,
+          0.4392157,
+          0.3529412,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Material of Upholstry - Chair",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.8,
+          0.8,
+          1.0
+        ],
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Base Material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5686275,
+          0.4392157,
+          0.3529412,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Glass Top Material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.933333337,
+          0.9019608,
+          0.854901969,
+          0.25
+        ]
+      },
+      "alphaMode": "BLEND",
+      "doubleSided": true
+    },
+    {
+      "name": "Default",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.498039216,
+          0.498039216,
+          0.498039216,
+          1.0
+        ],
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Plastic 2",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Plastic",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Plastic - Silver",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6784314,
+          0.6784314,
+          0.6784314,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Plastic - Black",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0,
+          0.0,
+          0.0,
+          0.475000024
+        ],
+        "metallicFactor": 0.0
+      },
+      "alphaMode": "BLEND",
+      "doubleSided": true
+    },
+    {
+      "name": "Metal - Paint Finish - Ivory,Glossy",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.968627453,
+          0.968627453,
+          0.9372549,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Metal - Chrome",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.06666667,
+          0.06666667,
+          0.06666667,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Table Material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.627451,
+          0.470588237,
+          0.384313732,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "TCXD-Tiling-Gach hoa gio",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.315,
+          0.315,
+          0.315,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 1.0
+      },
+      "doubleSided": true
+    }
+  ]
+}
