@@ -1,5 +1,0 @@
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAPILibs\bin\2017\COFRevitAPILibs.dll
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAPILibs\bin\2017\COFRevitAPILibs.pdb
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAPILibs\obj\2017\COFRevitAPILibs.csproj.CoreCompileInputs.cache
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAPILibs\obj\2017\COFRevitAPILibs.dll
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAPILibs\obj\2017\COFRevitAPILibs.pdb

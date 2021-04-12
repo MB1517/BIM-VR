@@ -1,3 +1,0 @@
-hello	world	1 2 3
-newline1	nothing
-newline2	something

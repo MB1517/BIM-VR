@@ -1,2 +1,0 @@
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\RevitExportCollada\obj\2019\RevitExportCollada.csprojAssemblyReference.cache
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\RevitExportCollada\obj\2019\RevitExportCollada.csproj.CoreCompileInputs.cache

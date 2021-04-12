@@ -1,2 +1,0 @@
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\InformationInput\obj\2019\InformationInput.csprojAssemblyReference.cache
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\InformationInput\obj\2019\InformationInput.csproj.CoreCompileInputs.cache

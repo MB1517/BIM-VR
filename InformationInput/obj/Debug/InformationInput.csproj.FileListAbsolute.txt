@@ -1,9 +1,0 @@
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\InformationInput\bin\Debug\InformationInput.dll
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\InformationInput\bin\Debug\InformationInput.pdb
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\InformationInput\bin\Debug\COFRevitAPILibs.dll
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\InformationInput\bin\Debug\COFRevitAPILibs.pdb
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\InformationInput\obj\Debug\InformationInput.csprojAssemblyReference.cache
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\InformationInput\obj\Debug\InformationInput.csproj.CoreCompileInputs.cache
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\InformationInput\obj\Debug\InformationInput.csproj.CopyComplete
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\InformationInput\obj\Debug\InformationInput.dll
-E:\COFICO#RnD\tvpduy\2019\COFRevitAPILibs\InformationInput\obj\Debug\InformationInput.pdb

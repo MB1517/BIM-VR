@@ -1,5 +1,0 @@
-G:\016-NGHIEN CUU\CAD_API\CAD_API\CAD_Utils\bin\Release\CAD_Utils.dll
-G:\016-NGHIEN CUU\CAD_API\CAD_API\CAD_Utils\bin\Release\CAD_Utils.pdb
-G:\016-NGHIEN CUU\CAD_API\CAD_API\CAD_Utils\obj\Release\CAD_Utils.csproj.CoreCompileInputs.cache
-G:\016-NGHIEN CUU\CAD_API\CAD_API\CAD_Utils\obj\Release\CAD_Utils.dll
-G:\016-NGHIEN CUU\CAD_API\CAD_API\CAD_Utils\obj\Release\CAD_Utils.pdb

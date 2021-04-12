@@ -1,6 +1,0 @@
-F:\016-NGHIEN CUU\COFRevitAPILibs\AutoDimension\bin\2017\AutoDimension.dll
-F:\016-NGHIEN CUU\COFRevitAPILibs\AutoDimension\bin\2017\AutoDimension.pdb
-F:\016-NGHIEN CUU\COFRevitAPILibs\AutoDimension\obj\2017\AutoDimension.csprojAssemblyReference.cache
-F:\016-NGHIEN CUU\COFRevitAPILibs\AutoDimension\obj\2017\AutoDimension.csproj.CoreCompileInputs.cache
-F:\016-NGHIEN CUU\COFRevitAPILibs\AutoDimension\obj\2017\AutoDimension.dll
-F:\016-NGHIEN CUU\COFRevitAPILibs\AutoDimension\obj\2017\AutoDimension.pdb

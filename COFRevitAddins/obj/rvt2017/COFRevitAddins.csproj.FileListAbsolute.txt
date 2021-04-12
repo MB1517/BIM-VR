@@ -1,9 +1,0 @@
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAddins\bin\rvt2017\COFRevitAddins.dll
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAddins\bin\rvt2017\COFRevitAddins.pdb
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAddins\bin\rvt2017\AutoDimension.dll
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAddins\bin\rvt2017\AutoDimension.pdb
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAddins\obj\rvt2017\COFRevitAddins.csprojAssemblyReference.cache
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAddins\obj\rvt2017\COFRevitAddins.csproj.CoreCompileInputs.cache
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAddins\obj\rvt2017\COFRevitAddins.csproj.CopyComplete
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAddins\obj\rvt2017\COFRevitAddins.dll
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAddins\obj\rvt2017\COFRevitAddins.pdb

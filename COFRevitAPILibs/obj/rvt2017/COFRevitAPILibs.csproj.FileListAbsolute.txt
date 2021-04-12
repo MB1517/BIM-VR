@@ -1,6 +1,0 @@
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAPILibs\bin\rvt2017\COFRevitAPILibs.dll
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAPILibs\bin\rvt2017\COFRevitAPILibs.pdb
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAPILibs\obj\rvt2017\COFRevitAPILibs.csprojAssemblyReference.cache
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAPILibs\obj\rvt2017\COFRevitAPILibs.csproj.CoreCompileInputs.cache
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAPILibs\obj\rvt2017\COFRevitAPILibs.dll
-F:\016-NGHIEN CUU\COFRevitAPILibs\COFRevitAPILibs\obj\rvt2017\COFRevitAPILibs.pdb
